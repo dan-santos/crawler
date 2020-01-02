@@ -1,12 +1,14 @@
 from bs4 import BeautifulSoup
 import urllib3
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 http = urllib3.PoolManager()
 links = [] #onde ficarão armzazenados todos os links da busca
 
-#pagsG1()
+pagsG1()
 pagsEstadao()
 
 def pagsG1():
@@ -44,10 +46,16 @@ def pagsG1():
 def pagsEstadao():
     #O request precisa de header porque o site nega o acesso de softwares automáticos, como o crawler
     #O header tem objetivo de simular como se fosse uma pessoa
-    conteudoPag = http.request('GET', 'https://busca.estadao.com.br/?tipo_conteudo=Not%C3%ADcias&quando=01%2F08%2F2018-01%2F11%2F2018&'+
-                               'q=Jo%C3%A3o%20D%C3%B3ria%20M%C3%A1rcio%20Fran%C3%A7a%20Fake%20News&editoria%5B%5D=Pol%C3%ADtica&editoria%5B%5D=Geral',
-                               headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'})
-    sopa = BeautifulSoup(conteudoPag.data, 'lxml')
+    driver = webdriver.Chrome('C:\\Users\\danie\\AppData\\Local\\Programs\\Python\\Python37\\chromedriver.exe')
+    driver.get('https://busca.estadao.com.br/?tipo_conteudo=Not%C3%ADcias&quando=01%2F08%2F2018-01%2F11%2F2018&q=Jo%C3%A3o%20D%C3%B3ria%20M%C3%A1rcio%20Fran%C3%A7a%20Fake%20News')
+    i = 0
+    for i in range(4):
+        btnVerMais = driver.find_element(By.CLASS_NAME, 'btn-mais')
+        btnVerMais.click()
+    
+    #conteudoPag = http.request('GET', 'https://busca.estadao.com.br/?tipo_conteudo=Not%C3%ADcias&quando=01%2F08%2F2018-01%2F11%2F2018&q=Jo%C3%A3o%20D%C3%B3ria%20M%C3%A1rcio%20Fran%C3%A7a%20Fake%20News',
+    #                           headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'})
+    sopa = BeautifulSoup(driver.context, 'lxml')
     for pags in sopa.find_all('a', class_='link-title'): #Identificando os links
         links.append(pags.get('href'))
 
