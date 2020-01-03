@@ -2,13 +2,23 @@ from bs4 import BeautifulSoup
 import urllib3
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 http = urllib3.PoolManager()
 links = [] #onde ficarão armzazenados todos os links da busca
 
-pagsG1()
+opts = webdriver.ChromeOptions()
+opts.add_argument("start-maximized")
+opts.add_argument('disable-infobars')
+path = 'C:\\Users\\danie\\AppData\\Local\\Programs\\Python\\Python37\\chromedriver.exe'
+driver = webdriver.Chrome(options=opts, executable_path=path)
+
+#pagsG1()
 pagsEstadao()
 
 def pagsG1():
@@ -43,19 +53,18 @@ def pagsG1():
         links.append('https:' + divs.find('a').get('href'))
         
 
-def pagsEstadao():
-    #O request precisa de header porque o site nega o acesso de softwares automáticos, como o crawler
-    #O header tem objetivo de simular como se fosse uma pessoa
-    driver = webdriver.Chrome('C:\\Users\\danie\\AppData\\Local\\Programs\\Python\\Python37\\chromedriver.exe')
-    driver.get('https://busca.estadao.com.br/?tipo_conteudo=Not%C3%ADcias&quando=01%2F08%2F2018-01%2F11%2F2018&q=Jo%C3%A3o%20D%C3%B3ria%20M%C3%A1rcio%20Fran%C3%A7a%20Fake%20News')
-    i = 0
-    for i in range(4):
-        btnVerMais = driver.find_element(By.CLASS_NAME, 'btn-mais')
-        btnVerMais.click()
+def pagsEstadao():    
+    driver.get('https://busca.estadao.com.br/?tipo_conteudo=Not%C3%ADcias&quando=01%2F08%2F2018-01%2F11%2F2018&q=Jo%C3%A3o%20D%C3%B3ria')
     
-    #conteudoPag = http.request('GET', 'https://busca.estadao.com.br/?tipo_conteudo=Not%C3%ADcias&quando=01%2F08%2F2018-01%2F11%2F2018&q=Jo%C3%A3o%20D%C3%B3ria%20M%C3%A1rcio%20Fran%C3%A7a%20Fake%20News',
-    #                           headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'})
-    sopa = BeautifulSoup(driver.context, 'lxml')
-    for pags in sopa.find_all('a', class_='link-title'): #Identificando os links
-        links.append(pags.get('href'))
+    for i in range(4):
+        try:
+            #"btn-mais" é a classe do botão que quero clicar
+            driver.execute_script("arguments[0].click();", WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.CLASS_NAME, 'btn-mais'))))
+            time.sleep(5)
+        except:
+            break
+        
+    for pags in driver.find_elements(By.CLASS_NAME, 'link-title'): #Identificando os links
+        links.append(pags.get_attribute('href'))
+    driver.quit() #fecha a página depois de pegar os links
 
