@@ -10,8 +10,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 http = urllib3.PoolManager()
 
-#onde ficarão armzazenados todos os links da busca
-links = [] 
+#links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
+tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 
 #sites que o crawler irá buscar (e atributos importantes para a captura de informações)
 #Em todos os sites o período de busca será 01/08/18 até 01/11/18
@@ -21,7 +21,19 @@ sites = ['http://g1.globo.com/busca/?q=Fake+News+Intelig%C3%AAncia+Artificial+el
 botoes = ['.results__content:last-child > div > a', '.mais-itens:last-child > div > a', '.c-pagination__arrow:last-child > a']
 tagLinks = ['.widget--info__text-container:last-child > a', '.link-title', '.c-headline__content:last-child > a']
 
-pegarLinks(sites, botoes, tagLinks) #Método que pegará todos os links de todos os sites
+#pegarLinks(sites, botoes, tagLinks) #Método que pegará todos os links de todos os sites
+
+#tiramos os links inicialmente alocados na lista para usá-las novamente procurando os tweets
+sites.clear()
+tagLinks.clear()
+sites = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn',
+         'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn']
+
+tagLinks = ['.css-1dbjc4n.r-1iusvr4.r-16y2uox.r-1777fci.r-5f2r5o.r-1mi0q7o', #Tweet inteiro
+            '.css-1dbjc4n.r-18u37iz.r-1wtj0ep.r-zl2h9q', #Autor/Data do tweet
+            '.css-901oao.r-hkyrab.r-1qd0xha.r-a023e6.r-16dba41.r-ad9z0x.r-bcqeeo.r-bnwqim.r-qvutc0'] #Conteúdo escrito do tweet
+            
+pegarTweets(sites, tagLinks)
 
 def pegarLinks(site, botao, tagLink):
     #Inicializando navegador
@@ -56,3 +68,31 @@ def pegarLinks(site, botao, tagLink):
     driver.close() # Ao acabar de pegar todos os links de todos os sites, o navegador fecha
 
 
+def pegarTweets(perfisTwitter, tagLink):
+    opts = webdriver.ChromeOptions()
+    opts.add_argument("start-maximized")
+    opts.add_argument('disable-infobars')
+    driver = webdriver.Chrome(options=opts, executable_path='chromedriver.exe')
+    
+    for i in range(len(perfisTwitter)): #Percorrera o perfil dos dois candidatos
+        driver.get(perfisTwitter[i]) #`Pega o link de pesquisa avançada
+        last_height = driver.execute_script("return document.body.scrollHeight")
+        while True:
+            try:
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(2)
+                new_height = driver.execute_script("return document.body.scrollHeight")
+                if new_height == last_height: 
+                    #Se após o scroll a altura da página permanecer a mesma, é porque chegamos ao final
+                    #pois o Twitter carrega novos resultados quando a tela chega no fim da página
+                    break
+                last_height = new_height
+            except:
+                break
+                
+
+        for tweet in driver.find_elements(By.CSS_SELECTOR, tagLink[0]): #pegar todos os tweets
+            tweets.append(driver.find_element(By.CSS_SELECTOR, tagLink[0] + ':lastchild > ' + tagLink[1]) #autor/data
+            + ' tweetou: ' + driver.find_element(By.CSS_SELECTOR, tagLink[0] + ':lastchild > ' + tagLink[2])) #conteúdo do tweet
+    
+    driver.close()
