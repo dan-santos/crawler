@@ -29,9 +29,8 @@ tagLinks.clear()
 sites = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn',
          'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn']
 
-tagLinks = ['.css-1dbjc4n.r-1iusvr4.r-16y2uox.r-1777fci.r-5f2r5o.r-1mi0q7o', #Tweet inteiro
-            '.css-1dbjc4n.r-18u37iz.r-1wtj0ep.r-zl2h9q', #Autor/Data do tweet
-            '.css-901oao.r-hkyrab.r-1qd0xha.r-a023e6.r-16dba41.r-ad9z0x.r-bcqeeo.r-bnwqim.r-qvutc0'] #Conteúdo escrito do tweet
+tagLinks = ['.content', #Tweet inteiro
+            ' > div[class="js-tweet-text-container"] > p'] #Conteúdo escrito do tweet
             
 pegarTweets(sites, tagLinks)
 
@@ -73,6 +72,7 @@ def pegarTweets(perfisTwitter, tagLink):
     opts.add_argument("start-maximized")
     opts.add_argument('disable-infobars')
     driver = webdriver.Chrome(options=opts, executable_path='chromedriver.exe')
+    posicaoTweet = 0
     
     for i in range(len(perfisTwitter)): #Percorrera o perfil dos dois candidatos
         driver.get(perfisTwitter[i]) #`Pega o link de pesquisa avançada
@@ -90,9 +90,15 @@ def pegarTweets(perfisTwitter, tagLink):
             except:
                 break
                 
-
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLink[0]): #pegar todos os tweets
-            tweets.append(driver.find_element(By.CSS_SELECTOR, tagLink[0] + ':lastchild > ' + tagLink[1]) #autor/data
-            + ' tweetou: ' + driver.find_element(By.CSS_SELECTOR, tagLink[0] + ':lastchild > ' + tagLink[2])) #conteúdo do tweet
-    
+            if i == 0: #Marcio França
+                tweets.append(tweet.text[:13] + '(' + tweet.text[32:48]  + '), em ' + tweet.text[49:66] + ', tweetou: ')
+            else:
+                tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + ', tweetou: ')
+            
+        
+        for tweet in driver.find_elements(By.CSS_SELECTOR, tagLink[0]+tagLink[1]):
+            tweets[posicaoTweet] += tweet.text
+            posicaoTweet += 1
+            
     driver.close()
