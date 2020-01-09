@@ -80,7 +80,7 @@ def pegarTweets(perfisTwitter, tagLink):
         while True:
             try:
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(2)
+                time.sleep(1)
                 new_height = driver.execute_script("return document.body.scrollHeight")
                 if new_height == last_height: 
                     #Se após o scroll a altura da página permanecer a mesma, é porque chegamos ao final
@@ -92,13 +92,22 @@ def pegarTweets(perfisTwitter, tagLink):
                 
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLink[0]): #pegar todos os tweets
             if i == 0: #Marcio França
-                tweets.append(tweet.text[:13] + '(' + tweet.text[32:48]  + '), em ' + tweet.text[49:66] + ', tweetou: ')
+                if 'Em resposta a' in tweet.text and 'Márcio França retweetou' not in tweet.text: #Tweet de resposta. Temos que guardar também o user da pessoa que está sendo respondida
+                    tweets.append(tweet.text[:13] + '(' + tweet.text[32:48]  + '), em ' + tweet.text[49:66] + 
+                                  ', tweetou em resposta a ' + tweet.text[tweet.text.index('@', 48):tweet.text.index('\n', 87)] + ': ') #pegando @ do perfil que o candidato está respondendo
+                else:
+                    tweets.append(tweet.text[:13] + '(' + tweet.text[32:48]  + '), em ' + tweet.text[49:66] + ', tweetou: ')
             else:
-                tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + ', tweetou: ')
-            
+                if ' retweetou ' in tweet.text: #retweet
+                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + 
+                                  ', em resposta à menção de ' + tweet.text[83:tweet.text.index('\n',83)] + ', tweetou: ')
+                elif 'Em resposta a' in tweet.text: #twwet de resposta
+                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + 
+                                  ', tweetou em resposta a ' + tweet.text[tweet.text.index('@', 38):tweet.text.index('\n', 77)] + ': ')
+                else: #tweet normal
+                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + ', tweetou: ')
         
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLink[0]+tagLink[1]):
             tweets[posicaoTweet] += tweet.text
             posicaoTweet += 1
-            
-    driver.close()
+        driver.close()
