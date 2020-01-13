@@ -10,7 +10,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 http = urllib3.PoolManager()
 
-#links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
+links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
 tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 
 #sites que o crawler irá buscar (e atributos importantes para a captura de informações)
@@ -26,8 +26,8 @@ tagLinks = ['.widget--info__text-container:last-child > a', '.link-title', '.c-h
 #tiramos os links inicialmente alocados na lista para usá-las novamente procurando os tweets
 sites.clear()
 tagLinks.clear()
-sites = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn',
-         'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn']
+sites = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
+         'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
 
 tagLinks = ['.content', #Tweet inteiro
             ' > div[class="js-tweet-text-container"] > p'] #Conteúdo escrito do tweet
@@ -37,7 +37,7 @@ pegarTweets(sites, tagLinks)
 def pegarLinks(site, botao, tagLink):
     #Inicializando navegador
     opts = webdriver.ChromeOptions()
-    opts.add_argument("start-maximized")
+    opts.add_argument('start-maximized')
     opts.add_argument('disable-infobars')
     driver = webdriver.Chrome(options=opts, executable_path='chromedriver.exe')
     
@@ -50,7 +50,7 @@ def pegarLinks(site, botao, tagLink):
                     for pags in driver.find_elements(By.CSS_SELECTOR, tagLink[i]): 
                         links.append(pags.get_attribute('href'))
                 
-                driver.execute_script("arguments[0].click();", WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, botao[i]))))#Localizando botão de "ver mais"
+                driver.execute_script('arguments[0].click();', WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, botao[i]))))#Localizando botão de "ver mais"
                 time.sleep(2) #Tempo se 2 seg de espera para evitar erros de carregamento da página
                 click += 1 #incremento
             except: #Só cairá aqui se não existe mais botão de "Ver mais"
@@ -69,19 +69,19 @@ def pegarLinks(site, botao, tagLink):
 
 def pegarTweets(perfisTwitter, tagLink):
     opts = webdriver.ChromeOptions()
-    opts.add_argument("start-maximized")
+    opts.add_argument('start-maximized')
     opts.add_argument('disable-infobars')
     driver = webdriver.Chrome(options=opts, executable_path='chromedriver.exe')
     posicaoTweet = 0
     
     for i in range(len(perfisTwitter)): #Percorrera o perfil dos dois candidatos
         driver.get(perfisTwitter[i]) #`Pega o link de pesquisa avançada
-        last_height = driver.execute_script("return document.body.scrollHeight")
+        last_height = driver.execute_script('return document.body.scrollHeight')
         while True:
             try:
-                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
                 time.sleep(1)
-                new_height = driver.execute_script("return document.body.scrollHeight")
+                new_height = driver.execute_script('return document.body.scrollHeight')
                 if new_height == last_height: 
                     #Se após o scroll a altura da página permanecer a mesma, é porque chegamos ao final
                     #pois o Twitter carrega novos resultados quando a tela chega no fim da página
@@ -90,24 +90,33 @@ def pegarTweets(perfisTwitter, tagLink):
             except:
                 break
                 
+            
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLink[0]): #pegar todos os tweets
             if i == 0: #Marcio França
-                if 'Em resposta a' in tweet.text and 'Márcio França retweetou' not in tweet.text: #Tweet de resposta. Temos que guardar também o user da pessoa que está sendo respondida
-                    tweets.append(tweet.text[:13] + '(' + tweet.text[32:48]  + '), em ' + tweet.text[49:66] + 
-                                  ', tweetou em resposta a ' + tweet.text[tweet.text.index('@', 48):tweet.text.index('\n', 87)] + ': ') #pegando @ do perfil que o candidato está respondendo
-                else:
-                    tweets.append(tweet.text[:13] + '(' + tweet.text[32:48]  + '), em ' + tweet.text[49:66] + ', tweetou: ')
-            else:
                 if ' retweetou ' in tweet.text: #retweet
-                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + 
-                                  ', em resposta à menção de ' + tweet.text[83:tweet.text.index('\n',83)] + ', tweetou: ')
+                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38] + '), em ' + tweet.text[39:56] + 
+                                  ', em resposta à menção de ' + tweet.text[83:tweet.text.index('\n', 83)] + ', tweetou: ')
                 elif 'Em resposta a' in tweet.text: #twwet de resposta
-                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + 
+                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38] + '), em ' + tweet.text[39:56] + 
                                   ', tweetou em resposta a ' + tweet.text[tweet.text.index('@', 38):tweet.text.index('\n', 77)] + ': ')
                 else: #tweet normal
-                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38]  + '), em ' + tweet.text[39:56] + ', tweetou: ')
+                    tweets.append(tweet.text[:10] + '(' + tweet.text[29:38] + '), em ' + tweet.text[39:56] + ', tweetou: ')
+            else:
+                if ' retweetou ' in tweet.text: #retweet
+                    tweets.append(tweet.text[:13] + '(' + tweet.text[32:48] + '), em ' + tweet.text[49:66] +
+                                  ', tweetou em resposta à menção de ' + tweet.text[93:tweet.text.index('\n', 93)] + ', tweetou: ')
+                elif 'Em resposta a' in tweet.text: #Tweet de resposta. Temos que guardar também o user da pessoa que está sendo respondida
+                    tweets.append(tweet.text[:13] + '(' + tweet.text[32:48] + '), em ' + tweet.text[49:66] + 
+                                  ', tweetou em resposta a ' + tweet.text[tweet.text.index('@', 48):tweet.text.index('\n', 87)] + ': ') #pegando @ do perfil que o candidato está respondendo
+                else:
+                    tweets.append(tweet.text[:13] + '(' + tweet.text[32:48] + '), em ' + tweet.text[49:66] + ', tweetou: ')
+                
         
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLink[0]+tagLink[1]):
             tweets[posicaoTweet] += tweet.text
             posicaoTweet += 1
-        driver.close()
+            
+            
+        if i == 1:
+            driver.close()
+                
