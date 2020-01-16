@@ -21,7 +21,7 @@ tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 tweetsJoaoDoria = list()
 tweetsMarcioFranca = list()
 
-pegarLinks() #Método que pegará todos os links de todos os sites            
+#pegarLinks() #Método que pegará todos os links de todos os sites            
 pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
 
 indexarTematicas(tweetsJoaoDoria, 1) #O número é a PK do candidato, pois precisamos contabilizar as temáticas por candidato
@@ -68,8 +68,8 @@ def pegarLinks():
 
 
 def pegarTweets():
-    perfisTwitter = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
-         'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
+    perfisTwitter = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
+         'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
 
     tagLinks = ['.content', #Tweet inteiro
             ' > div[class="js-tweet-text-container"] > p'] #Conteúdo escrito do tweet
@@ -120,9 +120,9 @@ def pegarTweets():
             tweets[posicaoTweet] += tweet.text
             posicaoTweet += 1
             if i == 0:
-                tweetsJoaoDoria.append(tweet)
+                tweetsJoaoDoria.append(tweet.text)
             else:
-                tweetsMarcioFranca.append(tweet)
+                tweetsMarcioFranca.append(tweet.text)
             
         if i == 1:
             driver.close()
@@ -130,12 +130,20 @@ def pegarTweets():
             
 def indexarTematicas(listaTweets, candidato):
     for tweet in listaTweets:
-        indexarPalavras(separaPalavras(tweet), candidato)
+        palavraIndexada(separaPalavras(tweet), candidato)
             
             
 def separaPalavras(texto): #Vai pegar o texto dos tweets para contabilizar a quantidade de palavras mais repetidas por cada candidato
     stopWords = nltk.corpus.stopwords.words('portuguese')
     stopWords.append('é') #"é" não é considerado uma stopword, por isso, adio=cionamos ela manualmente
+    stopWords.append('https')
+    stopWords.append('www')
+    stopWords.append('obrigado')
+    stopWords.append('são')
+    stopWords.append('pessoal')
+    stopWords.append('paulo')
+    stopWords.append('vamos')
+    
     splitter = re.compile('\\W+') #Pega todas as paçavras que tenham a-zA-z0-9_
     listaPalavras = []
     lista = [p for p in splitter.split(texto) if p != ''] #pegando todos os termos do tweet
@@ -145,34 +153,27 @@ def separaPalavras(texto): #Vai pegar o texto dos tweets para contabilizar a qua
             listaPalavras.append(palavra.lower())
     return listaPalavras
 
-
-def indexarPalavras(listaDePalavras, candidato): #Vai salvar em banco de dados palavras novas e contabilizar +1 palavras repetidas
-    for p in listaDePalavras:
-        idPalavra = palavraIndexada(p, candidato) #Se for existente, incrementará +1 e idPalavra passrá a ter o valor 1
-        if idPalavra == -1: #Se não tem a palavra no BD
-            idPalavra = inserePalavra(p, candidato)
-            
-            
-#verificando se a palavra existe no bd
-def palavraIndexada(palavra):
-    conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='webcrawler', use_unicode = True, charset = 'utf8mb4')
+                        
+#verificando se a palavra existe no bd, se exitir, incrementa +1. senão, grava
+def palavraIndexada(palavras, candidato):
+    conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
     cursorUrl = conexao.cursor()
-    idPalavra = cursorUrl.execute(f'select ID_Tematica from Tematicas where Nome_Tematica = {palavra} and ID_Candidato = {candidato}').fetchone()[0]
-    if cursorUrl.rowcount > 0: #se retornou algum resultado
-        qtd = cursorUrl.execute(f'select Quantidade_Tematica from Tematicas where ID_Tematica = {idPalavra}').fetchone()[0]
-        cursorUrl.execute(f'insert into Tematicas (Quantidade_Tematica) values {qtd+1} where ID_Tematica = {idPalavra}')
-        return 1
+    
+    for palavra in palavras:
+        cursorUrl.execute(f'select (ID_Tematica) from tematicas where Nome_Tematica = "{palavra}" and ID_Candidato = {candidato}')
+        if cursorUrl.rowcount > 0: #se retornou algum resultado
+            idPalavra = cursorUrl.fetchone()[0]
+            cursorUrl.execute(f'select (Quantidade_Tematica) from tematicas where ID_Tematica = {idPalavra}')
+            qtd = 1 + cursorUrl.fetchone()[0] #fetchone()[0] = pega o primeiro reultado retornado
+            print(f'ATUALIZEI A QTD DA PALAVRA "{palavra.strip()}" PARA {qtd}')
+            cursorUrl.execute(f'update tematicas set Quantidade_Tematica = {qtd} where ID_Tematica = {idPalavra}')
+        else:
+            cursorUrl.execute(f'insert into tematicas (ID_Candidato, Nome_Tematica, Quantidade_Tematica) values ({candidato}, "{palavra.strip()}", {1})') #FK do candidato, Nome, Quantidade
+        print(f'GRAVEI A PALAVRA "{palavra.strip()}"')
+        
     cursorUrl.close()
     conexao.close()
-    return -1
 
-
-def inserePalavra(palavra, candidato):
-    conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='webcrawler', use_unicode = True, charset = 'utf8mb4')
-    cursorUrl = conexao.cursor()
-    cursorUrl.execute(f'insert into Tematicas values ({candidato}, {palavra}, {1})') #FK do candidato, Nome, Quantidade
-    cursorUrl.close()
-    conexao.close()
 
 
                 

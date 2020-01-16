@@ -1,3 +1,7 @@
+create database eleicoes;
+use eleicoes;
+drop table tematicas;
+
 create table candidatos(
 	ID_Candidato int not null auto_increment,
     Nome_Candidato varchar (20) not null,
@@ -14,8 +18,11 @@ create table tweets(
 
 create table tematicas(
 	ID_Tematica int not null auto_increment,
-    Nome_Tematica varchar(30) not null,
-    constraint PK_tematicas_ID primary key (ID_Tematica)
+    ID_Candidato int not null,
+    Nome_Tematica varchar(50) not null,
+    Quantidade_Tematica int not null,
+    constraint PK_tematicas_ID primary key (ID_Tematica),
+    constraint FK_tematicas_IdCandidato foreign key (ID_Candidato) references candidatos (ID_Candidato)
 );
 
 create table noticias(
@@ -29,3 +36,7 @@ create table noticias(
 
 insert into candidatos (Nome_Candidato) values ("João Dória Jr.");
 insert into candidatos (Nome_Candidato) values ("Márcio França");
+
+select * from candidatos;
+select * from tematicas order by Quantidade_Tematica desc limit 20;
+drop table tematicas;
