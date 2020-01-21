@@ -10,20 +10,25 @@ import nltk
 import re
 import pymysql
 
+#TODO: Retirar os dois pontos que aparecem depois dos números de engajamento do tweet
+#TODO: Verificar se o tamanho da variável que armazenará o tweet é suficiente
+#TODO: Gravar Tweets no banco de dados
+#TODO: Saber se guardaremos as notícias no banco de dados ou a página html em uma página determinada
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 http = urllib3.PoolManager()
 
-links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
-#tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
+#links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
+tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 
 #Nas listas abaixo, ficarão armazenados apenas o conteúdo do tweet de cada candidato, para a análise mais perspicaz
 #das temáticas mais abordadas poor cada um
-#tweetsJoaoDoria = list()
-#tweetsMarcioFranca = list()
+tweetsJoaoDoria = list()
+tweetsMarcioFranca = list()
 
-pegarLinks() #Método que pegará todos os links de todos os sites            
-#pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
+#pegarLinks() #Método que pegará todos os links de todos os sites            
+pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
 
 #indexarTematicas(tweetsJoaoDoria, 1) #O número é a PK do candidato, pois precisamos contabilizar as temáticas por candidato
 #indexarTematicas(tweetsMarcioFranca, 2)
@@ -36,7 +41,7 @@ def pegarLinks():
          'https://search.folha.uol.com.br/search?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a+Fake+News+Elei%C3%A7%C3%B5es+SP+2018&periodo=personalizado&sd=01%2F08%2F2018&ed=01%2F11%2F2018&site=todos',
          'https://oglobo.globo.com/busca/?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a+Fake+News&species=not%C3%ADcias&page=1']
     botoes = ['.results__content:last-child > div > a', '.mais-itens:last-child > div > a', '.c-pagination__arrow:last-child > a', '.proximo']
-    tagLinks = ['.widget--info__text-container:last-child > a', '.link-title', '.c-headline__content:last-child > a', '.link-url']
+    tagLinks = ['.widget--info__text-container:last-child > a', '.link-title', '.c-headline__content:last-child > a', '.species-materia > .cor-produto']
     #Inicializando navegador
     opts = webdriver.ChromeOptions()
     opts.add_argument('start-maximized')
@@ -62,18 +67,16 @@ def pegarLinks():
                     dataNoticia = list()
                     #Localizando datas
                     for datas in driver.find_elements(By.CSS_SELECTOR, '.tempo-decorrido'):
-                        print('sadadss')
                         data = datas.text.strip() #tirando possíveis espaços em branco
                         data = data[:10] #tirando hora e deixando só a data
                         data = datetime.date(int(data[6:]), int(data[3:5]), int(data[:2]))#Pegando texto e tranformando em data
-                        if dataInicio <= data <= dataFim:#Definindo se a data é válida
+                        if dataInicio <= data <= dataFim: #Definindo se a data é válida
                             dataNoticia.append(True)
                         else:
                             dataNoticia.append(False)
                     
                     j = 0 #contador
-                    #TODO capturar os artigos também
-                    for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]): 
+                    for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]):
                         if pags.get_attribute('href') not in links and dataNoticia[j] == True: #se o link ainda não existe dentro da lista e a respectiva data é válida
                             links.append(pags.get_attribute('href'))
                         j += 1
@@ -98,12 +101,14 @@ def pegarTweets():
          'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
 
     tagLinks = ['.content', #Tweet inteiro
-            ' > div[class="js-tweet-text-container"] > p'] #Conteúdo escrito do tweet
+            ' > div[class="js-tweet-text-container"] > p', #Conteúdo escrito do tweet
+            '.js-actions'] #curtidas, retweets e repostas
     opts = webdriver.ChromeOptions()
     opts.add_argument('start-maximized')
     opts.add_argument('disable-infobars')
     driver = webdriver.Chrome(options=opts, executable_path='chromedriver.exe')
     posicaoTweet = 0
+    posicaoEngajamento = 0
     
     for i in range(len(perfisTwitter)): #Percorrera o perfil dos dois candidatos
         driver.get(perfisTwitter[i]) #`Pega o link de pesquisa avançada
@@ -142,13 +147,20 @@ def pegarTweets():
                 else:
                     tweets.append(tweet.text[:13] + '(' + tweet.text[32:48] + '), em ' + tweet.text[49:66] + ', tweetou: ')
         
+        #Adicionando o conteúdo do tweet
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLinks[0]+tagLinks[1]):
-            tweets[posicaoTweet] += tweet.text
+            tweets[posicaoTweet] += '\n\n"' + tweet.text + '"\n\n'
             posicaoTweet += 1
             if i == 0:
                 tweetsJoaoDoria.append(tweet.text)
             else:
                 tweetsMarcioFranca.append(tweet.text)
+                
+        #Adicionando o engajamento do tweet
+        for tweet in driver.find_elements(By.CSS_SELECTOR, tagLinks[2]):
+            tweets[posicaoEngajamento] += tweet.text.strip().replace('\n', ': ')
+            posicaoEngajamento += 1
+           
             
         if i == 2:
             driver.close()
@@ -161,17 +173,11 @@ def indexarTematicas(listaTweets, candidato):
             
 def separaPalavras(texto): #Vai pegar o texto dos tweets para contabilizar a quantidade de palavras mais repetidas por cada candidato
     stopWords = nltk.corpus.stopwords.words('portuguese')
-    stopWords.append('é') #"é" não é considerado uma stopword, por isso, adio=cionamos ela manualmente
-    stopWords.append('https')
-    stopWords.append('www')
-    stopWords.append('obrigado')
-    stopWords.append('são')
-    stopWords.append('pessoal')
-    stopWords.append('paulo')
-    stopWords.append('vamos')
+    stopWordsNaoListadas = ['joão', 'dória', 'márcio', 'frança', 'é', 'https', 'www', 'obrigado', 'são', 'paulo', 'pessoal', 'vamos']
+    stopWords.append(stopWordsNaoListadas[:])
     
     splitter = re.compile('\\W+') #Pega todas as paçavras que tenham a-zA-z0-9_
-    listaPalavras = []
+    listaPalavras = list()
     lista = [p for p in splitter.split(texto) if p != ''] #pegando todos os termos do tweet
     
     for palavra in lista: #Pegando palavras que não são stopwords e nem espaços em branco
@@ -198,8 +204,4 @@ def palavraIndexada(palavras, candidato):
         print(f'GRAVEI A PALAVRA "{palavra.strip()}"')
         
     cursorUrl.close()
-    conexao.close()
-
-
-
-                
+    conexao.close()                
