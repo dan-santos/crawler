@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import datetime
 import nltk
 import re
 import pymysql
@@ -47,10 +48,35 @@ def pegarLinks():
         click = 0 #Variável que contará quantas vezes o botão de "Ver mais" ou semelhante foi clicado
         while click < 4: #Se existir, o botão "Ver mais" será clicado 4 vezes, contabilizando assim 5xNúmero de links padrão de cada site
             try:
-                if i >= 2: #O site da folha e o globo mostra apenas 25 por vez, dessa forma, a cada clique nesse site, temos que armazenar os links
+                if i == 2: 
+                    #O site da folha mostra apenas 25 por vez, dessa forma, a cada clique nesse site, temos que armazenar os links
                     for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]): 
-                        if pags.get_attribute('href') not in links: #se o link ainda não existe dentro da lista
+                        links.append(pags.get_attribute('href'))
+                elif i == 3: 
+                    #O site o globo só mostra 10 resultados por vez, e, além disso, não pos possui filtro de busca com datas
+                    # Graças a isso, deveremos verificar se a notícia está no intervalo pretendido.
+                    # Ademais, mesmo após os resultados tendo se esgotado, o botão de próximo continua sendo válido para clique, por isso
+                    # antes de armazenar o link, devemos verificar se ele já não foi inserido (O conflito acontece na último página de resultados)
+                    dataInicio = datetime.date(2018, 8, 1)
+                    dataFim = datetime.date(2018, 11, 1)
+                    dataNoticia = list()
+                    #Localizando datas
+                    for datas in driver.find_elements(By.CSS_SELECTOR, '.tempo-decorrido'):
+                        print('sadadss')
+                        data = datas.text.strip() #tirando possíveis espaços em branco
+                        data = data[:10] #tirando hora e deixando só a data
+                        data = datetime.date(int(data[6:]), int(data[3:5]), int(data[:2]))#Pegando texto e tranformando em data
+                        if dataInicio <= data <= dataFim:#Definindo se a data é válida
+                            dataNoticia.append(True)
+                        else:
+                            dataNoticia.append(False)
+                    
+                    j = 0 #contador
+                    #TODO capturar os artigos também
+                    for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]): 
+                        if pags.get_attribute('href') not in links and dataNoticia[j] == True: #se o link ainda não existe dentro da lista e a respectiva data é válida
                             links.append(pags.get_attribute('href'))
+                        j += 1
                 
                 driver.execute_script('arguments[0].click();', WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, botoes[i]))))#Localizando botão de "ver mais"
                 time.sleep(2) #Tempo se 2 seg de espera para evitar erros de carregamento da página
