@@ -10,11 +10,10 @@ import nltk
 import re
 import pymysql
 
-#TODO: Retirar os dois pontos que aparecem depois dos números de engajamento do tweet
-#TODO: Verificar se o tamanho da variável que armazenará o tweet é suficiente
-#TODO: Gravar Tweets no banco de dados
 #TODO: Saber se guardaremos as notícias no banco de dados ou a página html em uma página determinada
-
+#TODO: Ajustar filtros do site "O globo"
+#TODO: Capturar título da notícia
+#TODO: Capturar relevância da notícia (em qual página ela se encontra)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 http = urllib3.PoolManager()
@@ -29,7 +28,7 @@ tweetsMarcioFranca = list()
 
 #pegarLinks() #Método que pegará todos os links de todos os sites            
 pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
-
+indexarTweet(tweets)
 #indexarTematicas(tweetsJoaoDoria, 1) #O número é a PK do candidato, pois precisamos contabilizar as temáticas por candidato
 #indexarTematicas(tweetsMarcioFranca, 2)
 
@@ -97,8 +96,8 @@ def pegarLinks():
 
 
 def pegarTweets():
-    perfisTwitter = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
-         'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-10-26%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
+    perfisTwitter = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
+         'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
 
     tagLinks = ['.content', #Tweet inteiro
             ' > div[class="js-tweet-text-container"] > p', #Conteúdo escrito do tweet
@@ -116,7 +115,7 @@ def pegarTweets():
         while True:
             try:
                 driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
-                time.sleep(1)
+                time.sleep(2)
                 new_height = driver.execute_script('return document.body.scrollHeight')
                 if new_height == last_height: 
                     #Se após o scroll a altura da página permanecer a mesma, é porque chegamos ao final
@@ -147,22 +146,29 @@ def pegarTweets():
                 else:
                     tweets.append(tweet.text[:13] + '(' + tweet.text[32:48] + '), em ' + tweet.text[49:66] + ', tweetou: ')
         
+        
         #Adicionando o conteúdo do tweet
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLinks[0]+tagLinks[1]):
-            tweets[posicaoTweet] += '\n\n"' + tweet.text + '"\n\n'
+            tweets[posicaoTweet] += '\n\n\"' + tweet.text.strip() + '\"\n\n'
             posicaoTweet += 1
             if i == 0:
-                tweetsJoaoDoria.append(tweet.text)
+                tweetsJoaoDoria.append(tweet.text.strip())
             else:
-                tweetsMarcioFranca.append(tweet.text)
+                tweetsMarcioFranca.append(tweet.text.strip())
+                
                 
         #Adicionando o engajamento do tweet
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLinks[2]):
-            tweets[posicaoEngajamento] += tweet.text.strip().replace('\n', ': ')
-            posicaoEngajamento += 1
-           
+            texto = tweet.text.strip().replace('\n', '') #Tirando as quebras de linhas
+            #Aprimorando a visualização dos dados recolhidos
+            texto = texto.replace('Responder', 'Respostas: ') 
+            texto = texto.replace('Retweetar', ' Retweets: ')
+            texto = texto.replace('Curtir', ' Curtidas: ')
+            tweets[posicaoEngajamento] += texto #Adicionando texto de engajamento ao resto do tweet
+            posicaoEngajamento += 1  
             
-        if i == 2:
+            
+        if i == 1:
             driver.close()
             
             
@@ -200,8 +206,25 @@ def palavraIndexada(palavras, candidato):
             print(f'ATUALIZEI A QTD DA PALAVRA "{palavra.strip()}" PARA {qtd}')
             cursorUrl.execute(f'update tematicas set Quantidade_Tematica = {qtd} where ID_Tematica = {idPalavra}')
         else:
-            cursorUrl.execute(f'insert into tematicas (ID_Candidato, Nome_Tematica, Quantidade_Tematica) values ({candidato}, "{palavra.strip()}", {1})') #FK do candidato, Nome, Quantidade
+            cursorUrl.execute(f'insert into tematicas values ({candidato}, "{palavra.strip()}", {1})') #FK do candidato, Nome, Quantidade
         print(f'GRAVEI A PALAVRA "{palavra.strip()}"')
         
     cursorUrl.close()
-    conexao.close()                
+    conexao.close()  
+
+
+def indexarTweet(tweets):
+    conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
+    cursorUrl = conexao.cursor()
+    
+    
+    for tweet in tweets:
+        if tweet[0] == 'J': # Tweet do João Dória
+            print('INDEXANDO TWEETS DE João Dória ...\n')
+            cursorUrl.execute('insert into tweets (ID_Candidato, Conteudo_Tweet) values (%s, %s)', (1, tweet))
+        else: # Tweet do Márcio França
+            print('INDEXANDO TWEETS DE Márcio França ...\n')
+            cursorUrl.execute('insert into tweets (ID_Candidato, Conteudo_Tweet) values (%s, %s)', (2, tweet))
+            
+    cursorUrl.close()
+    conexao.close()

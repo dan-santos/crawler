@@ -11,7 +11,7 @@ create table candidatos(
 create table tweets(
 	ID_Tweet int not null auto_increment,
     ID_Candidato int not null,
-    Conteudo_Tweet varchar(350) not null,
+    Conteudo_Tweet varchar(470) not null,
     constraint PK_tweets_ID primary key (ID_Tweet),
     constraint FK_tweets_IdCandidato foreign key (ID_Candidato) references candidatos (ID_Candidato)
 );
@@ -37,6 +37,10 @@ create table noticias(
 insert into candidatos (Nome_Candidato) values ("João Dória Jr.");
 insert into candidatos (Nome_Candidato) values ("Márcio França");
 
+delete from tweets;
+
 select * from candidatos;
-select * from tematicas order by Quantidade_Tematica desc limit 20;
+select * from tematicas;
+select * from tweets limit 50;
 drop table tematicas;
+drop table tweets;
