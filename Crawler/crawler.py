@@ -1,5 +1,3 @@
-from bs4 import BeautifulSoup
-import urllib3
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,25 +8,26 @@ import nltk
 import re
 import pymysql
 
-#TODO: Saber se guardaremos as notícias no banco de dados ou a página html em uma página determinada
-#TODO: Ajustar filtros do site "O globo"
-#TODO: Capturar título da notícia
-#TODO: Capturar relevância da notícia (em qual página ela se encontra)
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+#TODO Verificar se o algoritmo está rodando com todas as funções ativadas
+#TODO Ajustar comentários
+#TODO Adicionar descrição das funções (PyCharm)
 
-http = urllib3.PoolManager()
+links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
+titulos = list() #onde ficarão armazenados os títulos das notícias
+relevancia = list() #onde ficará armazenada a relevancia da noticia
 
-#links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
-tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
+#tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 
 #Nas listas abaixo, ficarão armazenados apenas o conteúdo do tweet de cada candidato, para a análise mais perspicaz
 #das temáticas mais abordadas poor cada um
-tweetsJoaoDoria = list()
-tweetsMarcioFranca = list()
+#tweetsJoaoDoria = list()
+#tweetsMarcioFranca = list()
 
-#pegarLinks() #Método que pegará todos os links de todos os sites            
-pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
-indexarTweet(tweets)
+pegarLinks() #Método que pegará todos os links de todos os sites   
+indexarNoticias(links)
+         
+#pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
+#indexarTweet(tweets)
 #indexarTematicas(tweetsJoaoDoria, 1) #O número é a PK do candidato, pois precisamos contabilizar as temáticas por candidato
 #indexarTematicas(tweetsMarcioFranca, 2)
 
@@ -38,9 +37,10 @@ def pegarLinks():
     sites = ['http://g1.globo.com/busca/?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&page=1&order=recent&from=2018-08-01T00%3A00%3A00-0300&to=2018-11-01T23%3A59%3A59-0300&species=not%C3%ADcias',
          'https://busca.estadao.com.br/?tipo_conteudo=Not%C3%ADcias&quando=01%2F08%2F2018-01%2F11%2F2018&q=Jo%C3%A3o%20D%C3%B3ria%20M%C3%A1rcio%20Fran%C3%A7a%20&editoria%5B%5D=Pol%C3%ADtica&editoria%5B%5D=Geral',
          'https://search.folha.uol.com.br/search?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a+Fake+News+Elei%C3%A7%C3%B5es+SP+2018&periodo=personalizado&sd=01%2F08%2F2018&ed=01%2F11%2F2018&site=todos',
-         'https://oglobo.globo.com/busca/?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a+Fake+News&species=not%C3%ADcias&page=1']
+         'https://oglobo.globo.com/busca/?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&species=not%C3%ADcias&page=1']
     botoes = ['.results__content:last-child > div > a', '.mais-itens:last-child > div > a', '.c-pagination__arrow:last-child > a', '.proximo']
     tagLinks = ['.widget--info__text-container:last-child > a', '.link-title', '.c-headline__content:last-child > a', '.species-materia > .cor-produto']
+    tagTitulos = ['.widget--info__title', '.third', '.c-headline__title', '.species-materia > .cor-produto'] #Tags dos títulos das notícias
     #Inicializando navegador
     opts = webdriver.ChromeOptions()
     opts.add_argument('start-maximized')
@@ -50,12 +50,16 @@ def pegarLinks():
     for i in range(len(sites)): #Percorrera todos os sites
         driver.get(sites[i]) #Acessando o site
         click = 0 #Variável que contará quantas vezes o botão de "Ver mais" ou semelhante foi clicado
-        while click < 4: #Se existir, o botão "Ver mais" será clicado 4 vezes, contabilizando assim 5xNúmero de links padrão de cada site
+        while click < 5: #Se existir, o botão "Ver mais" será clicado 4 vezes, contabilizando assim 5xNúmero de links padrão de cada site
             try:
                 if i == 2: 
                     #O site da folha mostra apenas 25 por vez, dessa forma, a cada clique nesse site, temos que armazenar os links
                     for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]): 
                         links.append(pags.get_attribute('href'))
+                        relevancia.append(click+1)
+                    for titulo in driver.find_elements(By.CSS_SELECTOR, tagTitulos[i]): 
+                        titulos.append(titulo.text)
+                        
                 elif i == 3: 
                     #O site o globo só mostra 10 resultados por vez, e, além disso, não pos possui filtro de busca com datas
                     # Graças a isso, deveremos verificar se a notícia está no intervalo pretendido.
@@ -78,7 +82,10 @@ def pegarLinks():
                     for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]):
                         if pags.get_attribute('href') not in links and dataNoticia[j] == True: #se o link ainda não existe dentro da lista e a respectiva data é válida
                             links.append(pags.get_attribute('href'))
+                            titulos.append(pags.text)
+                            relevancia.append(click+1)
                         j += 1
+                    
                 
                 driver.execute_script('arguments[0].click();', WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, botoes[i]))))#Localizando botão de "ver mais"
                 time.sleep(2) #Tempo se 2 seg de espera para evitar erros de carregamento da página
@@ -89,10 +96,49 @@ def pegarLinks():
         
         if i < 2: #O site da folha não precisa passar por aqui por já foi analizada no for anterior
             #Os sites G1 e Estadão mostram todos os resultados, por isso deixamos para fazer a coleta de links agora
-            for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]): #Percorrerá todos os links para as notícias
+            for j, pags in enumerate(driver.find_elements(By.CSS_SELECTOR, tagLinks[i])): #Percorrerá todos os links para as notícias
                 links.append(pags.get_attribute('href'))
+                if i == 0: # G1
+                    if j <= 15:
+                        relevancia.append(1)
+                    elif j <= 30:
+                        relevancia.append(2)
+                    elif j <= 45:
+                        relevancia.append(3)
+                    elif j <= 60:
+                        relevancia.append(4)
+                    else:
+                        relevancia.append(5)
+                else: # Estadão
+                    if j <= 10:
+                        relevancia.append(1)
+                    elif j <= 20:
+                        relevancia.append(2)
+                    elif j <= 30:
+                        relevancia.append(3)
+                    elif j <= 40:
+                        relevancia.append(4)
+                    else:
+                        relevancia.append(5)
+                    
+            for titulo in driver.find_elements(By.CSS_SELECTOR, tagTitulos[i]): 
+                titulos.append(titulo.text)
     
     driver.close() # Ao acabar de pegar todos os links de todos os sites, o navegador fecha
+    
+    
+def indexarNoticias(noticias): # Guardando no banco de dados as notícias retornadas
+    conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
+    cursorUrl = conexao.cursor()
+    
+    #noticias, titulos e relevancia possuem o mesmo tamanho
+    print('INDEXANDO NOTÍCIAS')
+    for i in range(len(noticias)):
+        cursorUrl.execute('insert into noticias (Titulo_Noticia, Link_Noticia, Relevancia_Noticia)'
+                          +' values (%s, %s, %s)', (titulos[i], links[i], relevancia[i]))
+        
+    cursorUrl.close()
+    conexao.close()
 
 
 def pegarTweets():
@@ -167,7 +213,6 @@ def pegarTweets():
             tweets[posicaoEngajamento] += texto #Adicionando texto de engajamento ao resto do tweet
             posicaoEngajamento += 1  
             
-            
         if i == 1:
             driver.close()
             
@@ -190,8 +235,7 @@ def separaPalavras(texto): #Vai pegar o texto dos tweets para contabilizar a qua
         if palavra.lower() not in stopWords and len(palavra) > 1:
             listaPalavras.append(palavra.lower())
     return listaPalavras
-
-                        
+         
 #verificando se a palavra existe no bd, se exitir, incrementa +1. senão, grava
 def palavraIndexada(palavras, candidato):
     conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
