@@ -19,7 +19,7 @@ create table tweets(
 create table tematicas(
 	ID_Tematica int not null auto_increment,
     ID_Candidato int not null,
-    Nome_Tematica varchar(50) not null,
+    Nome_Tematica varchar(80) not null,
     Quantidade_Tematica int not null,
     constraint PK_tematicas_ID primary key (ID_Tematica),
     constraint FK_tematicas_IdCandidato foreign key (ID_Candidato) references candidatos (ID_Candidato)
@@ -41,8 +41,12 @@ insert into candidatos (Nome_Candidato) values ("Márcio França");
 delete from tweets;
 
 select * from candidatos;
-select * from tematicas;
-select * from tweets limit 50;
+select count(*) from tematicas;
+select count(*) from tweets;
 select * from noticias limit 250;
 drop table tematicas;
 drop table tweets;
+
+select tematicas.Quantidade_Tematica, tematicas.Nome_Tematica, candidatos.Nome_Candidato 
+from tematicas, candidatos where tematicas.ID_Candidato = candidatos.ID_Candidato
+order by Quantidade_Tematica desc limit 100;

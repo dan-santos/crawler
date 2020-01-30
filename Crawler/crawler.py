@@ -8,28 +8,27 @@ import nltk
 import re
 import pymysql
 
-#TODO Verificar se o algoritmo está rodando com todas as funções ativadas
 #TODO Ajustar comentários
 #TODO Adicionar descrição das funções (PyCharm)
 
-links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
-titulos = list() #onde ficarão armazenados os títulos das notícias
-relevancia = list() #onde ficará armazenada a relevancia da noticia
+#links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
+#titulos = list() #onde ficarão armazenados os títulos das notícias
+#relevancia = list() #onde ficará armazenada a relevancia da noticia
 
-#tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
+tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 
 #Nas listas abaixo, ficarão armazenados apenas o conteúdo do tweet de cada candidato, para a análise mais perspicaz
 #das temáticas mais abordadas poor cada um
-#tweetsJoaoDoria = list()
-#tweetsMarcioFranca = list()
+tweetsJoaoDoria = list()
+tweetsMarcioFranca = list()
 
-pegarLinks() #Método que pegará todos os links de todos os sites   
-indexarNoticias(links)
+#pegarLinks() #Método que pegará todos os links de todos os sites   
+#indexarNoticias(links)
          
 #pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
 #indexarTweet(tweets)
-#indexarTematicas(tweetsJoaoDoria, 1) #O número é a PK do candidato, pois precisamos contabilizar as temáticas por candidato
-#indexarTematicas(tweetsMarcioFranca, 2)
+indexarTematicas(tweetsJoaoDoria, 1) #O número é a PK do candidato, pois precisamos contabilizar as temáticas por candidato
+indexarTematicas(tweetsMarcioFranca, 2)
 
 def pegarLinks():
     #sites que o crawler irá buscar (e atributos importantes para a captura de informações)
@@ -145,6 +144,7 @@ def pegarTweets():
     perfisTwitter = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
          'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
 
+
     tagLinks = ['.content', #Tweet inteiro
             ' > div[class="js-tweet-text-container"] > p', #Conteúdo escrito do tweet
             '.js-actions'] #curtidas, retweets e repostas
@@ -158,10 +158,11 @@ def pegarTweets():
     for i in range(len(perfisTwitter)): #Percorrera o perfil dos dois candidatos
         driver.get(perfisTwitter[i]) #`Pega o link de pesquisa avançada
         last_height = driver.execute_script('return document.body.scrollHeight')
+        time.sleep(2)
         while True:
             try:
                 driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
-                time.sleep(2)
+                time.sleep(3)
                 new_height = driver.execute_script('return document.body.scrollHeight')
                 if new_height == last_height: 
                     #Se após o scroll a altura da página permanecer a mesma, é porque chegamos ao final
@@ -171,9 +172,9 @@ def pegarTweets():
             except:
                 break
                 
-            
+        print(f'PEGANDO TWEETS DO {i+1}º CANDIDATO...')
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLinks[0]): #pegar todos os tweets
-            if i == 0: #Marcio França
+            if i == 0: # João Dória
                 if ' retweetou ' in tweet.text: #retweet
                     tweets.append(tweet.text[:10] + '(' + tweet.text[29:38] + '), em ' + tweet.text[39:56] + 
                                   ', em resposta à menção de ' + tweet.text[83:tweet.text.index('\n', 83)] + ', tweetou: ')
@@ -192,7 +193,7 @@ def pegarTweets():
                 else:
                     tweets.append(tweet.text[:13] + '(' + tweet.text[32:48] + '), em ' + tweet.text[49:66] + ', tweetou: ')
         
-        
+        print('ADICIONANDO CORPO PRINCIPAL DOS TWEETS...')
         #Adicionando o conteúdo do tweet
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLinks[0]+tagLinks[1]):
             tweets[posicaoTweet] += '\n\n\"' + tweet.text.strip() + '\"\n\n'
@@ -202,7 +203,7 @@ def pegarTweets():
             else:
                 tweetsMarcioFranca.append(tweet.text.strip())
                 
-                
+        print('ADICIONANDO ENGAJAMENTO AOS TWEETS...')
         #Adicionando o engajamento do tweet
         for tweet in driver.find_elements(By.CSS_SELECTOR, tagLinks[2]):
             texto = tweet.text.strip().replace('\n', '') #Tirando as quebras de linhas
@@ -224,8 +225,22 @@ def indexarTematicas(listaTweets, candidato):
             
 def separaPalavras(texto): #Vai pegar o texto dos tweets para contabilizar a quantidade de palavras mais repetidas por cada candidato
     stopWords = nltk.corpus.stopwords.words('portuguese')
-    stopWordsNaoListadas = ['joão', 'dória', 'márcio', 'frança', 'é', 'https', 'www', 'obrigado', 'são', 'paulo', 'pessoal', 'vamos']
-    stopWords.append(stopWordsNaoListadas[:])
+    #StopWords que não estão listadas na lista acima:
+    stopWordsNaoListadas = ['joão', 'dória', 'joao', 'doria', 'márcio', 'frança', 'marcio', 'franca', 'https', 'www', 'capital', 
+                            'obrigado', 'paulo', 'pessoal', 'vamos', 'márciofrança40', 'onovogovernador40', 'acelerasp', 'mil',
+                            'aquitempalavra40', 'vote45', 'doriagovernador', 'bolsodoria', 'joãodoria45', '40', 'paulo', 'equipemárciofrança',
+                            'palavra', 'joãotrabalhador', 'fazer', 'vamos', 'ser', 'ter', 'têm', 'havia', 'último', 'boa', 'dia',
+                            'acerca', 'agora', 'algumas', 'alguns', 'ali', 'ambos', 'antes', 'apontar', 'aqui', 'atrás', 'bem',
+                            'bom', 'cada', 'caminho', 'cima', 'comprido', 'conhecido', 'corrente', 'debaixo', 'dentro', 'desde',
+                            'ligado', 'deve', 'devem', 'deverá', 'diz', 'dizer', 'dois', 'dose', 'enquanto', 'então', 'importante',
+                            'estar', 'estará', 'fará', 'faz', 'fazer', 'fazia', 'fez', 'fim', 'horas', 'iniciar', 'inicio', 'ir',
+                            'irá', 'ista', 'iste', 'ligado', 'maioria', 'maiorias', 'muitos', 'nome', 'novo', 'onde', 'outro', 
+                            'parte', 'pegar', 'pessoas', 'pode', 'poderá', 'podia', 'porque', 'povo', 'ir', 'oquê', 'qualquer',
+                            'quieto', 'saber', 'ser', 'somente', 'têm', 'tal', 'tempo', 'tentar', 'tentaram', 'tente', 'tentei',
+                            'todos', 'trabalhar', 'trabalho', 'umas', 'uns', 'usa', 'usar', 'valor', 'veja', 'ver', 'verdade', 'verdadeiro']
+    
+    stopWords += stopWordsNaoListadas[:]
+    del(stopWordsNaoListadas)
     
     splitter = re.compile('\\W+') #Pega todas as paçavras que tenham a-zA-z0-9_
     listaPalavras = list()
@@ -242,15 +257,16 @@ def palavraIndexada(palavras, candidato):
     cursorUrl = conexao.cursor()
     
     for palavra in palavras:
-        cursorUrl.execute(f'select (ID_Tematica) from tematicas where Nome_Tematica = "{palavra}" and ID_Candidato = {candidato}')
+        cursorUrl.execute(f'select (ID_Tematica) from tematicas where Nome_Tematica = %s and ID_Candidato = %s', (palavra, candidato))
         if cursorUrl.rowcount > 0: #se retornou algum resultado
             idPalavra = cursorUrl.fetchone()[0]
-            cursorUrl.execute(f'select (Quantidade_Tematica) from tematicas where ID_Tematica = {idPalavra}')
+            cursorUrl.execute(f'select (Quantidade_Tematica) from tematicas where ID_Tematica = %s', idPalavra)
             qtd = 1 + cursorUrl.fetchone()[0] #fetchone()[0] = pega o primeiro reultado retornado
             print(f'ATUALIZEI A QTD DA PALAVRA "{palavra.strip()}" PARA {qtd}')
-            cursorUrl.execute(f'update tematicas set Quantidade_Tematica = {qtd} where ID_Tematica = {idPalavra}')
+            cursorUrl.execute(f'update tematicas set Quantidade_Tematica = %s where ID_Tematica = %s', (qtd, idPalavra))
         else:
-            cursorUrl.execute(f'insert into tematicas values ({candidato}, "{palavra.strip()}", {1})') #FK do candidato, Nome, Quantidade
+            cursorUrl.execute(f'insert into tematicas (ID_Candidato, Nome_Tematica, Quantidade_Tematica) values '+
+                                                       '(%s, %s, %s)', (candidato, palavra.strip(), 1)) #FK do candidato, Nome, Quantidade
         print(f'GRAVEI A PALAVRA "{palavra.strip()}"')
         
     cursorUrl.close()

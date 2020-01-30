@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">Quantidade_Tematica</Data></Cell>
+			<Cell><Data ss:Type="String">Nome_Tematica</Data></Cell>
+			<Cell><Data ss:Type="String">Nome_Candidato</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="Number">489</Data></Cell>
+			<Cell><Data ss:Type="String">márciofrança40</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">477</Data></Cell>
+			<Cell><Data ss:Type="String">onovogovernador40</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">403</Data></Cell>
+			<Cell><Data ss:Type="String">acelerasp</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">401</Data></Cell>
+			<Cell><Data ss:Type="String">aquitempalavra40</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">332</Data></Cell>
+			<Cell><Data ss:Type="String">vote45</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">318</Data></Cell>
+			<Cell><Data ss:Type="String">vamos</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">315</Data></Cell>
+			<Cell><Data ss:Type="String">doriagovernador</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">250</Data></Cell>
+			<Cell><Data ss:Type="String">joãodoria45</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">193</Data></Cell>
+			<Cell><Data ss:Type="String">obrigado</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">190</Data></Cell>
+			<Cell><Data ss:Type="String">40</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">175</Data></Cell>
+			<Cell><Data ss:Type="String">paulo</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">171</Data></Cell>
+			<Cell><Data ss:Type="String">pessoal</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">156</Data></Cell>
+			<Cell><Data ss:Type="String">estado</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">152</Data></Cell>
+			<Cell><Data ss:Type="String">palavra</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">142</Data></Cell>
+			<Cell><Data ss:Type="String">agora</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">140</Data></Cell>
+			<Cell><Data ss:Type="String">apoio</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">135</Data></Cell>
+			<Cell><Data ss:Type="String">joãotrabalhador</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">131</Data></Cell>
+			<Cell><Data ss:Type="String">fazer</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">129</Data></Cell>
+			<Cell><Data ss:Type="String">vamos</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">123</Data></Cell>
+			<Cell><Data ss:Type="String">estado</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">117</Data></Cell>
+			<Cell><Data ss:Type="String">juntos</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">111</Data></Cell>
+			<Cell><Data ss:Type="String">população</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">109</Data></Cell>
+			<Cell><Data ss:Type="String">aqui</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">107</Data></Cell>
+			<Cell><Data ss:Type="String">sp</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">106</Data></Cell>
+			<Cell><Data ss:Type="String">pessoas</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">90</Data></Cell>
+			<Cell><Data ss:Type="String">paulo</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">88</Data></Cell>
+			<Cell><Data ss:Type="String">gestão</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">87</Data></Cell>
+			<Cell><Data ss:Type="String">certo</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">83</Data></Cell>
+			<Cell><Data ss:Type="String">dória</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">77</Data></Cell>
+			<Cell><Data ss:Type="String">vote40</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">77</Data></Cell>
+			<Cell><Data ss:Type="String">vida</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">76</Data></Cell>
+			<Cell><Data ss:Type="String">mudança</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">75</Data></Cell>
+			<Cell><Data ss:Type="String">prefeito</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">75</Data></Cell>
+			<Cell><Data ss:Type="String">defendasp</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">67</Data></Cell>
+			<Cell><Data ss:Type="String">dia</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">63</Data></Cell>
+			<Cell><Data ss:Type="String">https</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">62</Data></Cell>
+			<Cell><Data ss:Type="String">ainda</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">59</Data></Cell>
+			<Cell><Data ss:Type="String">obrigado</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">57</Data></Cell>
+			<Cell><Data ss:Type="String">governo</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">57</Data></Cell>
+			<Cell><Data ss:Type="String">sp</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">57</Data></Cell>
+			<Cell><Data ss:Type="String">carinho</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">56</Data></Cell>
+			<Cell><Data ss:Type="String">qualidade</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">55</Data></Cell>
+			<Cell><Data ss:Type="String">hoje</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">53</Data></Cell>
+			<Cell><Data ss:Type="String">região</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">53</Data></Cell>
+			<Cell><Data ss:Type="String">trabalho</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">53</Data></Cell>
+			<Cell><Data ss:Type="String">começou</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">52</Data></Cell>
+			<Cell><Data ss:Type="String">vai</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">52</Data></Cell>
+			<Cell><Data ss:Type="String">todos</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">50</Data></Cell>
+			<Cell><Data ss:Type="String">projeto</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">48</Data></Cell>
+			<Cell><Data ss:Type="String">governo</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">48</Data></Cell>
+			<Cell><Data ss:Type="String">forte</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">46</Data></Cell>
+			<Cell><Data ss:Type="String">trabalho</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">45</Data></Cell>
+			<Cell><Data ss:Type="String">bom</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">45</Data></Cell>
+			<Cell><Data ss:Type="String">apoio</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">45</Data></Cell>
+			<Cell><Data ss:Type="String">confiança</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">44</Data></Cell>
+			<Cell><Data ss:Type="String">frança</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">44</Data></Cell>
+			<Cell><Data ss:Type="String">interior</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">43</Data></Cell>
+			<Cell><Data ss:Type="String">programa</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">43</Data></Cell>
+			<Cell><Data ss:Type="String">márcio</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">43</Data></Cell>
+			<Cell><Data ss:Type="String">frança</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">43</Data></Cell>
+			<Cell><Data ss:Type="String">aqui</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">42</Data></Cell>
+			<Cell><Data ss:Type="String">brasil</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">41</Data></Cell>
+			<Cell><Data ss:Type="String">2018</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">41</Data></Cell>
+			<Cell><Data ss:Type="String">todo</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">41</Data></Cell>
+			<Cell><Data ss:Type="String">debate</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">40</Data></Cell>
+			<Cell><Data ss:Type="String">carinho</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">40</Data></Cell>
+			<Cell><Data ss:Type="String">seguir</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">40</Data></Cell>
+			<Cell><Data ss:Type="String">hoje</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">40</Data></Cell>
+			<Cell><Data ss:Type="String">oportunidades</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">39</Data></Cell>
+			<Cell><Data ss:Type="String">12</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">39</Data></Cell>
+			<Cell><Data ss:Type="String">twitter</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">39</Data></Cell>
+			<Cell><Data ss:Type="String">segurança</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">38</Data></Cell>
+			<Cell><Data ss:Type="String">melhor</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">38</Data></Cell>
+			<Cell><Data ss:Type="String">cada</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">38</Data></Cell>
+			<Cell><Data ss:Type="String">márcio</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">38</Data></Cell>
+			<Cell><Data ss:Type="String">capital</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">37</Data></Cell>
+			<Cell><Data ss:Type="String">status</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">37</Data></Cell>
+			<Cell><Data ss:Type="String">brasil</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">37</Data></Cell>
+			<Cell><Data ss:Type="String">saúde</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">36</Data></Cell>
+			<Cell><Data ss:Type="String">importante</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">36</Data></Cell>
+			<Cell><Data ss:Type="String">saúde</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">36</Data></Cell>
+			<Cell><Data ss:Type="String">tiagobmon</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">36</Data></Cell>
+			<Cell><Data ss:Type="String">população</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">36</Data></Cell>
+			<Cell><Data ss:Type="String">1049974068009689089</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">35</Data></Cell>
+			<Cell><Data ss:Type="String">bolsodoria</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">35</Data></Cell>
+			<Cell><Data ss:Type="String">verdade</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">35</Data></Cell>
+			<Cell><Data ss:Type="String">cidade</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">34</Data></Cell>
+			<Cell><Data ss:Type="String">mil</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">34</Data></Cell>
+			<Cell><Data ss:Type="String">segurança</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">33</Data></Cell>
+			<Cell><Data ss:Type="String">melhorar</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">33</Data></Cell>
+			<Cell><Data ss:Type="String">respeito</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">33</Data></Cell>
+			<Cell><Data ss:Type="String">diálogo</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">33</Data></Cell>
+			<Cell><Data ss:Type="String">equipemárciofrança</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">33</Data></Cell>
+			<Cell><Data ss:Type="String">educação</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">33</Data></Cell>
+			<Cell><Data ss:Type="String">todos</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">32</Data></Cell>
+			<Cell><Data ss:Type="String">ser</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">32</Data></Cell>
+			<Cell><Data ss:Type="String">boa</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">32</Data></Cell>
+			<Cell><Data ss:Type="String">parte</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">31</Data></Cell>
+			<Cell><Data ss:Type="String">acelerar</Data></Cell>
+			<Cell><Data ss:Type="String">João Dória Jr.</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="Number">31</Data></Cell>
+			<Cell><Data ss:Type="String">debateband</Data></Cell>
+			<Cell><Data ss:Type="String">Márcio França</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>
