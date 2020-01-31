@@ -11,9 +11,9 @@ import pymysql
 #TODO Ajustar comentários
 #TODO Adicionar descrição das funções (PyCharm)
 
-#links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
-#titulos = list() #onde ficarão armazenados os títulos das notícias
-#relevancia = list() #onde ficará armazenada a relevancia da noticia
+links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
+titulos = list() #onde ficarão armazenados os títulos das notícias
+relevancia = list() #onde ficará armazenada a relevancia da noticia
 
 tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 
@@ -22,13 +22,13 @@ tweets = list() #onde ficarão armazenados todos os tweets dos dois candidatos
 tweetsJoaoDoria = list()
 tweetsMarcioFranca = list()
 
-#pegarLinks() #Método que pegará todos os links de todos os sites   
-#indexarNoticias(links)
-         
-#pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
-#indexarTweet(tweets)
+pegarLinks() #Método que pegará todos os links de todos os sites   
+indexarNoticias(links)
+pegarTweets() #Método que pegará todos os tweets (Essa lista servirá apenas para armazenarmos todos os tweets em BD)
+indexarTweet(tweets)
 indexarTematicas(tweetsJoaoDoria, 1) #O número é a PK do candidato, pois precisamos contabilizar as temáticas por candidato
 indexarTematicas(tweetsMarcioFranca, 2)
+    
 
 def pegarLinks():
     #sites que o crawler irá buscar (e atributos importantes para a captura de informações)
@@ -143,7 +143,6 @@ def indexarNoticias(noticias): # Guardando no banco de dados as notícias retorn
 def pegarTweets():
     perfisTwitter = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
          'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
-
 
     tagLinks = ['.content', #Tweet inteiro
             ' > div[class="js-tweet-text-container"] > p', #Conteúdo escrito do tweet
@@ -267,7 +266,7 @@ def palavraIndexada(palavras, candidato):
         else:
             cursorUrl.execute(f'insert into tematicas (ID_Candidato, Nome_Tematica, Quantidade_Tematica) values '+
                                                        '(%s, %s, %s)', (candidato, palavra.strip(), 1)) #FK do candidato, Nome, Quantidade
-        print(f'GRAVEI A PALAVRA "{palavra.strip()}"')
+            print(f'GRAVEI A PALAVRA "{palavra.strip()}"')
         
     cursorUrl.close()
     conexao.close()  

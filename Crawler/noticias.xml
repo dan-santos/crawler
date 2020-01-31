@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">Título da notícia</Data></Cell>
+			<Cell><Data ss:Type="String">Link</Data></Cell>
+			<Cell><Data ss:Type="String">Relevância</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">João Doria e Márcio França participam de debate na TV; veja propostas</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=1&r=1580318454053&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F19%2Fjoao-doria-e-marcio-franca-participam-de-debate-na-tv-veja-propostas.ghtml&syn=False&key=bb0abd670a4195b169d3a04191568c02</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TEM Notícias entrevista João Doria, candidato ao governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=2&r=1580318454059&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsorocaba-jundiai%2Fnoticia%2F2018%2F10%2F24%2Ftem-noticias-entrevista-joao-doria-candidato-ao-governo-de-sp.ghtml&syn=False&key=1e6542888b6ec931decb32cd91c6bd43</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de Márcio França à CBN e ao G1</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=3&r=1580318454065&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F10%2F24%2Fveja-o-que-e-fato-ou-fake-na-entrevista-de-marcio-franca-a-cbn-e-ao-g1.ghtml&syn=False&key=b51b6030d19e2e30fc701263a50905d2</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria vence em 78% dos municípios de SP no 1º turno; Márcio França é o preferido no litoral sul e Vale do Ribeira</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=4&r=1580318454071&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F08%2Fdoria-vence-em-78-dos-municipios-de-sp-no-1o-turno-marcio-franca-e-o-preferido-no-litoral-sul-e-vale-do-ribeira.ghtml&syn=False&key=c819f92adb29c5a7e22543cb5f9d1807</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE nas falas dos candidatos ao governo de SP no debate da Globo</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=5&r=1580318454077&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F10%2F26%2Fveja-o-que-e-fato-ou-fake-nas-falas-dos-candidatos-ao-governo-de-sp-no-debate-da-globo1.ghtml&syn=False&key=2e8b8e916c3752eb465ce8d65a2d8834</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope em São Paulo, votos válidos: Doria, 52%; França, 48%</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=6&r=1580318454085&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F17%2Fibope-em-sao-paulo-votos-validos-doria-tem-52-e-franca-48.ghtml&syn=False&key=7a9821ce9f16e8ae5a5583bc24b870d2</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018: novas ferramentas contra fake news são impossíveis a uma semana da votação, diz WhatsApp</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=7&r=1580318454090&u=https%3A%2F%2Fg1.globo.com%2Fpolitica%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F19%2Feleicoes-2018-novas-ferramentas-contra-fake-news-sao-impossiveis-a-uma-semana-da-votacao-diz-whatsapp.ghtml&syn=False&key=b5c624a6a91197655d4e52bf6c92a0e0</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Candidato à reeleição ao governo de SP, Márcio França está com pneumonia</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=8&r=1580318454097&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F27%2Fcandidato-a-reeleicao-ao-governo-de-sp-marcio-franca-esta-com-pneumonia.ghtml&syn=False&key=113889b7e73724a803ddb78834420e55</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Franca</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=9&r=1580318454104&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fribeirao-preto-franca%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Ffranca%2F1-turno&syn=False&key=322cf2e6aad8233ebc7cf83e7dc16ff8</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Franca</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=10&r=1580318454109&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fribeirao-preto-franca%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Ffranca%2F1-turno&syn=False&key=f1e0924f34eddc61008ec274fdf575bc</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Datafolha em São Paulo, votos válidos: Doria, 52%; França, 48%</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=11&r=1580318454115&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F25%2Fdatafolha-em-sao-paulo-votos-validos-doria-52-franca-48.ghtml&syn=False&key=e1c485548fcef6bc8f7ae75bf554ebf5</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE nas falas dos candidatos ao governo de SP no debate da RedeTV</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=12&r=1580318454124&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F08%2F25%2Fveja-o-que-e-fato-ou-fake-nas-falas-dos-candidatos-ao-governo-de-sp-no-debate-da-redetv.ghtml&syn=False&key=c1be834e6b0b77933a51850a8589c829</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE nas falas dos candidatos ao governo de SP no debate da Band</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=13&r=1580318454132&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F08%2F17%2Fveja-o-que-e-fato-ou-fake-nas-falas-dos-candidatos-ao-governo-de-sp-no-debate-da-band.ghtml&syn=False&key=9186ad51a9d166a45780497970df5a27</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Datafolha em São Paulo, votos válidos: França, 51%; Doria, 49%</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=14&r=1580318454139&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F27%2Fdatafolha-em-sao-paulo-votos-validos-franca-51-doria-49.ghtml&syn=False&key=5f4159c8bbf9e70c9e0d2ce8f267e164</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope em São Paulo, votos válidos: Doria, 53%; França, 47%</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=15&r=1580318454147&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F23%2Fibope-em-sao-paulo-votos-validos-doria-53-franca-47.ghtml&syn=False&key=d408f90304c5e8ad88cc080a8a6dc08a</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Saiba o que os candidatos do 2º turno ao governo de SP disseram após o debate da Globo</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=16&r=1580318460058&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F26%2Fsaiba-o-que-os-candidatos-do-2o-turno-ao-governo-de-sp-disseram-apos-o-debate-da-globo.ghtml&syn=False&key=7f0843493321a563f18dae6a4e5999a1</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria escolhe vice como secretário de Governo e esboça primeiro escalão em SP</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,doria-escolhe-vice-como-secretario-de-governo-e-esboca-primeiro-escalao-em-sp,70002579579</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Resultado eleitoral refletiu pesquisas feitas pelo Ibope</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,resultado-eleitoral-refletiu-pesquisas-feitas-pelo-ibope,70002575501</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">A disputa pela capital paulista</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/a-disputa-pela-capital-paulista/</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Geraldo Alckmin liga para cumprimentar João Doria após eleições</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,geraldo-alckmin-liga-para-cumprimentar-joao-doria-apos-eleicoes,70002572629</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PSDB salvo pelo gongo</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/blogs/neumanne/psdb-salvo-pelo-gongo/</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Alesp não está garantida</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/alesp-nao-esta-garantida/</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria promete governar para todos e diz que não é traidor</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,doria-promete-governar-para-todos-e-diz-que-nao-e-traidor,70002572105</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria com menos votos do que Alckmin</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/doria-com-menos-votos-do-que-alckmin/</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja todos os governadores eleitos no segundo turno</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,veja-todos-os-governadores-eleitos-no-segundo-turno,70002570716</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'É hora de pacificar o Brasil', diz Doria no primeiro discurso como governador eleito</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/geral,e-hora-de-pacificar-o-brasil-diz-doria-no-primeiro-discurso-como-governador-eleito,70002570777</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria: 'Nem FHC nem Alckmin me ligaram'</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/doria-nem-fhc-nem-alckmin-me-ligaram/</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Muito obrigado a todos e até a próxima</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/31/5586-aovivo.shtml#post384707</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria anuncia que não irá morar no Palácio dos Bandeirantes</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/30/5584-3-aovivo.shtml#post384609</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PT considera precipitada convocação de protesto</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/29/5583-4-aovivo.shtml#post384563</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Essa foi uma das campanhas mais sujas da história, diz Doria após votar</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/28/5579-3-aovivo.shtml#post384301</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope aponta empate nos votos válidos em SP entre Doria e França</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/27/5577-4-aovivo.shtml#post384243</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018: PF pede ao WhatsApp números que dispararam mensagens em massa</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/26/5575-aovivo.shtml</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Márcio, eu não promovo fake news e nem tenho vereador na minha base que produz fake news'</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/25/5574-8-aovivo.shtml#post384082</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Candidatos ao governo de SP miram voto do interior</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/24/5572-aovivo.shtml#post383930</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França e João Doria acertam detalhes do debate</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/23/5569-3-aovivo.shtml#post383830</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Cada polícia tem o governador que merece, diz coronel vice de França sobre acusações de Doria</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/22/5568-2-aovivo.shtml#post383760</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eles estão perdendo por causa das 'true news', diz Janaína Paschoal, que chama Haddad ao debate</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/21/5567-aovivo.shtml#post383715</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Imprensa cumpre seu papel ao investigar os fatos, diz eleitor de Bolsonaro</Data></Cell>
+			<Cell><Data ss:Type="String">https://www1.folha.uol.com.br/paineldoleitor/2018/10/imprensa-cumpre-seu-papel-ao-investigar-os-fatos-diz-eleitor-de-bolsonaro.shtml</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Campanha de Márcio França associa Doria ao PT</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/20/5565-aovivo.shtml#post383648</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Avaaz lança campanha contra a prática de fake news nas eleições</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/19/5564-6-aovivo.shtml#post383631</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Você não é o Bolsonaro, é o bolso seu'</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/18/5563-7-aovivo.shtml#post383535</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria e França estão tecnicamente empatados, diz Ibope</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/17/5562-3-aovivo.shtml#post383442</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Candidatos ao governo de SP abordam segurança em propaganda no rádio</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/16/5561-4-aovivo.shtml#post383377</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Candidatos ao governo de São Paulo fazem aceno a professores</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/15/5560-aovivo.shtml#post383336</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bolsonaro diz que vai lutar para desfazer alteração promovida pelo WhatsApp para combater fake news</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/12/5556-aovivo.shtml#post383206</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018: Bolsonaro diz a aliados que a mídia é adversária; Haddad visita CNBB</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/11/5555-aovivo.shtml</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em 1º evento juntos, Skaf e Márcio França se unem em críticas a 'falta de caráter' de Doria</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/10/5553-3-aovivo.shtml#post383089</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Quero unir o Brasil e pacificar', diz Bolsonaro em entrevista</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/09/5552-4-aovivo.shtml#post383031</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PSDB paulistano libera filiados no segundo turno entre Bolsonaro e Haddad</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/08/5548-5-aovivo.shtml#post382973</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">13 estados e o DF terão disputa de segundo turno</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/07/5542-30-aovivo.shtml#post382869</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleição na Chapa discute disseminação de fake news</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/05/5538-aovivo.shtml#post382417</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em São Paulo, João Doria enfrentará Márcio França no segundo tu...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=6&r=1580318530343&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sao-paulo-joao-doria-enfrentara-marcio-franca-no-segundo-turno-23137259&t=informacional&d=false&f=false&ss=&o=&cat=&key=24fbd8854b01911eeb125cf2df22e8ca</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope SP: João Doria (PSDB) tem 53% e Márcio França (PSB), 47%</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=8&r=1580318530346&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fibope-sp-joao-doria-psdb-tem-53-marcio-franca-psb-47-23179732&t=informacional&d=false&f=false&ss=&o=&cat=&key=40163944284cfb3dfb04b945a293d50f</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França recebe apoio do PDT e ironiza aceno de Doria a Bo...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=9&r=1580318530348&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fmarcio-franca-recebe-apoio-do-pdt-ironiza-aceno-de-doria-bolsonaro-23157784&t=informacional&d=false&f=false&ss=&o=&cat=&key=0c29d00ec25aea7b347a6206d659a6d8</Data></Cell>
+			<Cell><Data ss:Type="Number">1</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope em São Paulo, votos válidos: França, 50%; Doria, 50%</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=17&r=1580318460065&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F27%2Fibope-em-sao-paulo-votos-validos-franca-50-doria-50.ghtml&syn=False&key=1cac017971c4e0534799c30c2ecb79bd</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Datafolha em São Paulo, votos válidos: Doria, 53%; França, 47%</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=18&r=1580318460072&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F18%2Fdatafolha-em-sao-paulo-votos-validos-doria-53-franca-47.ghtml&syn=False&key=3cc6b676e56e794f39c2183f4f8b598f</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">O que é #FATO ou #FAKE em afirmações e publicações dos principais candidatos ao governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=19&r=1580318460078&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F08%2F16%2Fo-que-e-fato-ou-fake-em-afirmacoes-e-publicacoes-dos-principais-candidatos-ao-governo-de-sp.ghtml&syn=False&key=e398551529d54571a9710a5edd8cdfab</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Marcio França acompanha a mulher durante votação em São Vicente, SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=20&r=1580318460086&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F28%2Fmarcio-franca-acompanha-a-mulher-durante-votacao-em-sao-vicente-sp.ghtml&syn=False&key=e058f2384065b0f6fe058f89029fd381</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TEM Notícias entrevista Márcio França, candidato ao governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=21&r=1580318460094&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsorocaba-jundiai%2Feleicoes%2Fnoticia%2F2018%2F10%2F26%2Ftem-noticias-entrevista-marcio-franca-candidato-ao-governo-de-sp.ghtml&syn=False&key=f27e978dc000c6728d33951989bc60b2</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">G1 e CBN entrevistarão Márcio França, candidato ao governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=22&r=1580318460102&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F18%2Fg1-e-cbn-entrevistarao-marcio-franca-candidato-ao-governo-de-sp.ghtml&syn=False&key=db64961e764dacb77010f950e38e964b</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Tenho esperança', diz Márcio França ao votar em SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=23&r=1580318460112&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F07%2Fmarcio-franca-vota-em-sao-paulo.ghtml&syn=False&key=2e1a65fc4094f628f7b2232b008707b9</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Não vou tratar a população que não votou em mim como inimiga', diz Doria, governador eleito de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=24&r=1580318460117&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F29%2Fnao-vou-tratar-a-populacao-que-nao-votou-em-mim-como-inimiga-diz-doria-governador-eleito-de-sp.ghtml&syn=False&key=a202b0a445a05031e29a9d3735ac39ca</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França encerra campanha ao governo de SP na Baixada Santista</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=25&r=1580318460125&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F06%2Fmarcio-franca-encerra-campanha-ao-governo-de-sp-na-baixada-santista.ghtml&syn=False&key=488007f868beb34045d68cca73076fef</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França e João Doria participam de segundo debate do 2º turno na TV; veja propostas</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=26&r=1580318460135&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F19%2Fmarcio-franca-e-joao-doria-participam-de-segundo-debate-do-2o-turno-na-tv-veja-propostas.ghtml&syn=False&key=c207a78ef9b176ff1cea393b383f4ffd</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de Márcio França ao SP2</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=27&r=1580318460143&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F10%2F16%2Fveja-o-que-e-fato-ou-fake-na-entrevista-de-marcio-franca-ao-sp2.ghtml&syn=False&key=66d6c745fcaa6bfa9689681a407e8093</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Uma das eleições mais disputadas, SP terá segundo turno para governador</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=28&r=1580318460146&u=https%3A%2F%2Fg1.globo.com%2Fjornal-nacional%2Fnoticia%2F2018%2F10%2F08%2Fuma-das-eleicoes-mais-disputadas-sp-tera-segundo-turno-para-governador.ghtml&syn=False&key=286eee14650721aaa4c19a3f9c05fbd0</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - São Paulo</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=29&r=1580318460154&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fsao-paulo%2F1-turno&syn=False&key=045089b3b3f23c477585c037106d3a14</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria e França disputarão eleição para governador de SP no segundo turno</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=30&r=1580318460163&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F07%2Fdoria-e-franca-decidirao-eleicao-para-governador-de-sp-no-segundo-turno.ghtml&syn=False&key=6a91d57b543983dca986fed877a0e3ed</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Quatro homens são detidos em SP por cartazes com montagem de João Doria</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=31&r=1580318461985&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F25%2Fquatro-homens-sao-detidos-em-sp-por-cartazes-com-montagem-de-joao-doria.ghtml&syn=False&key=e1a10496a4a8dd580b50b532f67e00de</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bolsonaro vence com 64,7% dos votos em Glicério, sua terra natal</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,bolsonaro-vence-com-64-7-dos-votos-em-glicerio-sua-terra-natal,70002570606</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França diz que sai 'vitorioso'</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/franca-diz-que-sai-vitorioso/</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Capital paulista rejeita Doria e Haddad</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/capital-paulista-rejeita-ex-prefeitos/</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Quem é João Doria? Conheça a história do empresário que será o próximo governador de SP</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,quem-e-joao-doria-conheca-a-historia-do-empresario-que-sera-o-proximo-governador-de-sp,70002570470</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França parabeniza Doria</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/franca-parabeniza-doria/</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">João Doria é o novo governador de SP</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/joao-doria-e-o-novo-governador-de-sp/</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">A derrota particular do Major Olímpio</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/a-derrota-particular-do-major-olimpio/</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França supera Doria na capital</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/franca-supera-doria-na-capital/</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">João Doria é eleito governador em São Paulo; veja o resultado das eleições</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,com-20-das-urnas-apuradas-em-sao-paulo-doria-lidera-veja-o-resultado-das-eleicoes,70002570238</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Boca de urna Ibope: Doria 52%, França 48%</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/boca-de-urna-ibope-doria-52-franca-48/</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018: Bolsonaro, mesmo ausente, é atacado em último debate dos presidenciáveis</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/04/5535-aovivo.shtml</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Skaf segue tecnicamente empatado com Doria em SP, aponta Ibope</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/03/5534-2-aovivo.shtml#post382228</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, principais candidatos evitam confronto direito</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/02/5532-7-aovivo.shtml#post382176</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França diz que rivais são 'farinha do mesmo saco'</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/10/01/5530-aovivo.shtml#post382074</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, Doria e Skaf seguem empatados; Márcio França vai a 14%, diz Datafolha</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/09/28/5525-3-aovivo.shtml#post381866</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Vítima de fake news, Patrícia Pillar pede paz e respeito nas eleições</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/09/19/5510-aovivo.shtml#post381290</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Folha promove debates entre candidatos a governador em três estados</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/09/18/5508-2-aovivo.shtml#post381096</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Marina Silva defende investigação sobre propaganda pró-PT no Twitter</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/08/27/5469-2-aovivo.shtml#post379721</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria cada vez mais me coloca como um anti-Doria, diz Márcio França</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/08/21/5462-2-aovivo.shtml#post379468</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Até terça-feira!</Data></Cell>
+			<Cell><Data ss:Type="String">https://aovivo.folha.uol.com.br/2018/08/20/5461-aovivo.shtml#post379459</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de Márcio França ao S...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=10&r=1580318534011&u=https%3A%2F%2Foglobo.globo.com%2Ffato-ou-fake%2Fveja-que-fato-ou-fake-na-entrevista-de-marcio-franca-ao-sp2-23159074&t=informacional&d=false&f=false&ss=&o=&cat=&key=76df5b368a935374b9621352eec5e75d</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em entrevista, Márcio França critica adversários e se distancia...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=11&r=1580318534012&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-entrevista-marcio-franca-critica-adversarios-se-distancia-do-psdb-23055053&t=informacional&d=false&f=false&ss=&o=&cat=&key=f55d874c72411423b4c1db2f9c1669f8</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de Márcio França ao S...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=12&r=1580318534013&u=https%3A%2F%2Foglobo.globo.com%2Ffato-ou-fake%2Fveja-que-fato-ou-fake-na-entrevista-de-marcio-franca-ao-sp1-23057184&t=informacional&d=false&f=false&ss=&o=&cat=&key=179ca44e32eeb4ecb1da7cef4ffeddc3</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">É #FAKE que Alckmin fez aceno público, com adesivo do PSB, a Má...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=14&r=1580318534016&u=https%3A%2F%2Foglobo.globo.com%2Ffato-ou-fake%2Fe-fake-que-alckmin-fez-aceno-publico-com-adesivo-do-psb-marcio-franca-23191255&t=informacional&d=false&f=false&ss=&o=&cat=&key=54b51dc48222c5bba4eb1a18b16d9a6d</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">João Doria é eleito governador de São Paulo</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=15&r=1580318534017&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fjoao-doria-eleito-governador-de-sao-paulo-23193763&t=informacional&d=false&f=false&ss=&o=&cat=&key=a2a4c85d932772a251d1c0cc6b56f993</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de Márcio França à CB...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=16&r=1580318534018&u=https%3A%2F%2Foglobo.globo.com%2Ffato-ou-fake%2Fveja-que-fato-ou-fake-na-entrevista-de-marcio-franca-cbn-ao-g1-23182638&t=informacional&d=false&f=false&ss=&o=&cat=&key=96d524cd0f6006b60e9f006a0d430211</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, pesquisas convergem e mostram empate entre Doria e Franç...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=17&r=1580318534020&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sp-pesquisas-convergem-mostram-empate-entre-doria-franca-23191483&t=informacional&d=false&f=false&ss=&o=&cat=&key=2c8d664d9250b4d133e985c09dbd01a3</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope SP: Doria e França aparecem tecnicamente empatados</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=18&r=1580318534021&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fibope-sp-doria-franca-aparecem-tecnicamente-empatados-23163467&t=informacional&d=false&f=false&ss=&o=&cat=&key=b8b5432ff73464515fa505799ebc83a4</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em debate de São Paulo, Doria e França retomam acusações</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=19&r=1580318534022&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-debate-de-sao-paulo-doria-franca-retomam-acusacoes-23186610&t=informacional&d=false&f=false&ss=&o=&cat=&key=a111e14e18bb52336af95c6ffb10ecd9</Data></Cell>
+			<Cell><Data ss:Type="Number">2</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de Márcio França ao SP1</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=32&r=1580318461994&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F09%2F10%2Fveja-o-que-e-fato-ou-fake-na-entrevista-de-marcio-franca-ao-sp1.ghtml&syn=False&key=660f2768197bec922199b08475ba25bb</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - São Paulo</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=33&r=1580318462002&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fsao-paulo%2F1-turno&syn=False&key=01bbad2d51a7b5a68397f0fb06658e85</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França, candidato ao governo de SP, é entrevistado no TEM Notícias</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=34&r=1580318462016&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsorocaba-jundiai%2Fnoticia%2F2018%2F09%2F03%2Fmarcio-franca-candidato-ao-governo-de-sp-e-entrevistado-no-tem-noticias.ghtml&syn=False&key=c95c9345cb4d4ec63a528c9bd0a6e40f</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Tucano João Doria vence em disputa acirrada pelo governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=35&r=1580318462025&u=https%3A%2F%2Fg1.globo.com%2Fjornal-nacional%2Fnoticia%2F2018%2F10%2F29%2Ftucano-joao-doria-vence-em-disputa-acirrada-pelo-governo-de-sp.ghtml&syn=False&key=4588dd55a7245e0c3e78c4f372b08b07</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">João Doria, do PSDB, é eleito governador de São Paulo</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=36&r=1580318462032&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F28%2Fjoao-doria-do-psdb-e-eleito-governador-de-sao-paulo.ghtml&syn=False&key=6f362643e8b6ffb0c139a51a0e140e52</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Procuradoria Eleitoral contesta registro da candidatura do governador de SP, Márcio França, à reeleição</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=37&r=1580318462039&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F08%2F23%2Fprocuradoria-eleitoral-contesta-registro-da-candidatura-do-governador-de-sp-marcio-franca-a-reeleicao.ghtml&syn=False&key=d7a428d8944fffed573fbbbdb1740e77</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PF apreende material de campanha de João Doria em Ribeirão Preto, SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=38&r=1580318462042&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fribeirao-preto-franca%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F24%2Fpf-apreende-material-de-campanha-de-joao-doria-em-ribeirao-preto-sp.ghtml&syn=False&key=7ccf512d4bc5dab263ecceaf02f9b2dc</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">João Doria, candidato ao governo de SP, é entrevistado no TEM Notícias</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=39&r=1580318462048&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsorocaba-jundiai%2Fnoticia%2F2018%2F08%2F31%2Fjoao-doria-candidato-ao-governo-de-sp-e-entrevistado-no-tem-noticias.ghtml&syn=False&key=7d2651adbbaf3438affde67e38add390</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PMB oficializa apoio a Márcio França (PSB) para o governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=40&r=1580318462055&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F08%2F05%2Fpmb-oficializa-apoio-a-marcio-franca-psb-para-o-governo-de-sp.ghtml&syn=False&key=827c7cefbb1992c7353c4d0564405b4e</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PRP oficializa apoio a Márcio França (PSB) para o governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=41&r=1580318462061&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F08%2F04%2Fprp-oficializa-apoio-a-marcio-franca-psb-para-o-governo-de-sp.ghtml&syn=False&key=26e370272ed4c865f2b9cff8d89c400a</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PSC confirma apoio a Márcio França (PSB) para o governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=42&r=1580318462067&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F08%2F04%2Fpsc-confirma-apoio-a-marcio-franca-psb-para-o-governo-de-sp.ghtml&syn=False&key=d3e01f1d0fc438c0fd2d702c0dece8a1</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França promete ampliar universidade virtual em São Paulo</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=43&r=1580318462074&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F18%2Fmarcio-franca-promete-ampliar-universidade-virtual-em-sao-paulo.ghtml&syn=False&key=f254be39bf242a5b27aaf5252266a4c4</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de João Doria ao SP2</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=44&r=1580318462081&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F10%2F17%2Fveja-o-que-e-fato-ou-fake-na-entrevista-de-joao-doria-ao-sp2.ghtml&syn=False&key=a476c3a4f6d770cb3336af762ad4349e</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em entrevista ao EPTV 2 Ribeirão, Márcio França promete reabrir delegacias à noite no interior de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=45&r=1580318462087&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fribeirao-preto-franca%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F22%2Fem-entrevista-ao-eptv-2-ribeirao-marcio-franca-promete-reabrir-delegacias-a-noite-no-interior-de-sp.ghtml&syn=False&key=1d08c71dcda05869670af195dba54747</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Grupo de 8 deputados eleitos pelo PSL anuncia apoio a Márcio França em SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=46&r=1580318464278&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F24%2Fgrupo-de-8-deputados-eleitos-pelo-psl-anunciam-apoio-a-marcio-franca-em-sp.ghtml&syn=False&key=f23e4784e9143b373c7c99f4d51daf20</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria tem 52% e França tem 48%, diz boca de urna do Ibope</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,doria-tem-52-e-franca-tem-48-diz-boca-de-urna-do-ibope,70002570135</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Incendiário tucano</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/incendiario-tucano/</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">A aposta de França</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/a-aposta-de-franca/</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Voto é secreto e eu já disse em quem não votaria, isso basta', diz FHC</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,voto-e-secreto-e-eu-ja-disse-em-quem-nao-votaria-isso-basta-diz-fhc,70002569814</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'De virada é sempre mais gostoso', diz França após votar</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,sao-paulo-vai-dar-um-recado-firme-em-direcao-a-verdade-diz-franca,70002569642</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'De virada é mais gostoso'</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/de-virada-e-mais-gostoso/</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">SP será divisor de águas para o PSDB</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/sp-sera-divisor-de-aguas-para-o-psdb/</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria diz que conta com apoio do PSL 'verde-amarelo' ao votar em SP</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,doria-diz-que-conta-com-apoio-do-psl-verde-amarelo-ao-votar-em-sp,70002569516</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Alckmin 'abre' colégio eleitoral, mas não revela em quem votou</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,alckmin-abre-colegio-eleitoral-mas-nao-revela-em-quem-votou,70002569405</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Candidatura de Doria incendiou PSDB</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,candidatura-de-doria-incendiou-psdb,70002568853</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em debate, Doria e França evocam 'mimimi' e até maracugina</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=20&r=1580318536881&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-debate-doria-franca-evocam-mimimi-ate-maracugina-23169613&t=informacional&d=false&f=false&ss=&o=&cat=&key=c8a2b324ffa05d1698e7d43c304f2fb8</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de João Doria ao SP2</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=21&r=1580318536882&u=https%3A%2F%2Foglobo.globo.com%2Ffato-ou-fake%2Fveja-que-fato-ou-fake-na-entrevista-de-joao-doria-ao-sp2-23161979&t=informacional&d=false&f=false&ss=&o=&cat=&key=5ef3109783a0844e7fab131ca687a705</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">No rádio e na TV, Doria e França se posicionam e se atacam</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=22&r=1580318536883&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fno-radio-na-tv-doria-franca-se-posicionam-se-atacam-23152217&t=informacional&d=false&f=false&ss=&o=&cat=&key=53686071ec8a9d35b36754d42513eea9</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Skaf anuncia hoje apoio a Márcio França no segundo turno em SP</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=23&r=1580318536885&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fskaf-anuncia-hoje-apoio-marcio-franca-no-segundo-turno-em-sp-23144038&t=informacional&d=false&f=false&ss=&o=&cat=&key=32382354dc9da86add6760628adfd4c7</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Debate entre Doria e França é marcado por ataques pessoais</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=24&r=1580318536886&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fdebate-entre-doria-franca-marcado-por-ataques-pessoais-23167676&t=informacional&d=false&f=false&ss=&o=&cat=&key=d94c5ec981fbf41066f50d37e38ec993</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França é oficializado candidato do PSB ao governo de São...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=25&r=1580318536888&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fmarcio-franca-oficializado-candidato-do-psb-ao-governo-de-sao-paulo-22949822&t=informacional&d=false&f=false&ss=&o=&cat=&key=7c536664aa7bcc0feae029b684339106</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de João Doria ao SP1</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=26&r=1580318536890&u=https%3A%2F%2Foglobo.globo.com%2Ffato-ou-fake%2Fveja-que-fato-ou-fake-na-entrevista-de-joao-doria-ao-sp1-23063736&t=informacional&d=false&f=false&ss=&o=&cat=&key=92cd0953d5f1ee382eeea2069a00586a</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">SP: Boca de urna aponta empate técnico entre Doria e França</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=27&r=1580318536891&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fsp-boca-de-urna-aponta-empate-tecnico-entre-doria-franca-23193244&t=informacional&d=false&f=false&ss=&o=&cat=&key=136da8176194dbf7c2e9bbef1db1f2c6</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Alckmin elogia gestão de França, que disputa eleição com Doria</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=28&r=1580318536893&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Falckmin-elogia-gestao-de-franca-que-disputa-eleicao-com-doria-22958841&t=informacional&d=false&f=false&ss=&o=&cat=&key=478531a6d1bd014643abde6e1569cab8</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleição em SP: Doria minimiza empate em pesquisas, e França pro...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=29&r=1580318536894&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Feleicao-em-sp-doria-minimiza-empate-em-pesquisas-franca-projeta-virada-23192656&t=informacional&d=false&f=false&ss=&o=&cat=&key=7fcb872b6fb7eee9d7a86fa4942625a9</Data></Cell>
+			<Cell><Data ss:Type="Number">3</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França diz que não é lógico ampliar presídios em SP e propõe que imposto sobre combustíveis seja usado no transporte público</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=47&r=1580318464285&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F24%2Fmarcio-franca-diz-que-nao-e-logico-ampliar-presidios-em-sp-e-propoe-que-imposto-sobre-combustiveis-seja-usado-no-transporte-publico.ghtml&syn=False&key=4195695d5bb86ba64c2b1eb4a80c5e66</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">João Doria promete mais verbas para hospitais do estado de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=48&r=1580318464291&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F09%2F21%2Fjoao-doria-promete-mais-verbas-para-hospitais-do-estado-de-sp.ghtml&syn=False&key=2527e6c8700bb936b305144b239ab31e</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria e França participam do último debate na TV antes do 2° turno; veja propostas</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=49&r=1580318464298&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F25%2Fdoria-e-franca-participam-do-ultimo-debate-na-tv-antes-do-2-turno-veja-propostas.ghtml&syn=False&key=3bd22fdbcaf2623ba5a59e4f1ec7b188</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Animais também são alvos das fake news na natureza</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=50&r=1580318464304&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fcampinas-regiao%2Fterra-da-gente%2Fnoticia%2F2018%2F10%2F25%2Fanimais-tambem-sao-alvos-das-fake-news-na-natureza.ghtml&syn=False&key=44ae8ee6b23d9fdd6c2c323d779549d3</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">‘As pessoas queriam novidade em SP’, disse Márcio França sobre ser eleito para o 2º turno</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=51&r=1580318464311&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F08%2Fas-pessoas-queriam-novidade-em-sp-disse-marcio-franca-sobre-ser-eleito-para-o-2o-turno.ghtml&syn=False&key=a006c4aad9f36cb368edfacc4ecfc3ca</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria prepara equipe e escritório para fazer transição com governador Márcio França</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=52&r=1580318464314&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Fnoticia%2F2018%2F10%2F29%2Fdoria-prepara-equipe-e-escritorio-para-fazer-transicao-com-governador-marcio-franca.ghtml&syn=False&key=30b37b371e39f127ebdb1365ea45c20b</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria diz que vídeo com cenas íntimas é falso e que pediu perícia para tomar medidas judiciais</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=53&r=1580318464317&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F23%2Fdoria-diz-que-video-com-cenas-intimas-e-falso-e-que-pediu-pericia-para-tomar-medidas-judiciais.ghtml&syn=False&key=253e3b3dbd18c618381b604a53557797</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Prefeito de Lorena deixa PSDB, critica Doria e declara apoio a Márcio França</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=54&r=1580318464324&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fvale-do-paraiba-regiao%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F19%2Fprefeito-de-lorena-deixa-psdb-critica-doria-e-declara-apoio-a-marcio-franca.ghtml&syn=False&key=71ef7f749da105e98bbe848dbece20f0</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">É #FAKE que Alckmin fez aceno público, com adesivo do PSB, a Márcio França</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=55&r=1580318464330&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F10%2F27%2Fe-fake-que-alckmin-fez-aceno-publico-com-adesivo-do-psb-a-marcio-franca.ghtml&syn=False&key=23bf008a9a0b204ca8430ad976bfb80b</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de João Doria ao SP1</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=56&r=1580318464336&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F09%2F12%2Fveja-o-que-e-fato-ou-fake-na-entrevista-de-joao-doria-ao-sp1.ghtml&syn=False&key=292c9fbd1511a2635e45bf64cb9fb460</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja o que é #FATO ou #FAKE na entrevista de Márcio França ao G1 e à CBN</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=57&r=1580318464343&u=https%3A%2F%2Fg1.globo.com%2Ffato-ou-fake%2Fnoticia%2F2018%2F09%2F18%2Fveja-o-que-e-fato-ou-fake-na-entrevista-de-marcio-franca-ao-g1-e-a-cbn.ghtml&syn=False&key=60f95f66a156d4b2f173951375ca913e</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Justiça de SP condena João Doria à suspensão dos direitos políticos</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=58&r=1580318464349&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F08%2F24%2Fjustica-de-sp-condena-joao-doria-a-perda-dos-direitos-politicos.ghtml&syn=False&key=d900850a4d604419791349d2d4551fa0</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França, candidato ao governo de São Paulo pelo PSB, é entrevistado pelo Diário TV</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=59&r=1580318464355&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fmogi-das-cruzes-suzano%2Fnoticia%2F2018%2F08%2F30%2Fmarcio-franca-candidato-ao-governo-de-sao-paulo-pelo-psb-e-entrevistado-pelo-diario-tv.ghtml&syn=False&key=3b4ad32f6fedbe46692229d626e078df</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Não decido as coisas enquanto vice-governador; decido agora', diz Márcio França, candidato à reeleição em SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=60&r=1580318464362&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2016%2Fnoticia%2F2018%2F09%2F13%2Fnao-decido-as-coisas-enquanto-vice-governador-decido-agora-diz-marcio-franca-candidato-a-reeleicao-em-sp.ghtml&syn=False&key=f50ef38f70bed7b7ec8eec758ac265cd</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França promete incentivar municípios a instalarem câmeras para monitoramento em todo o estado de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=61&r=1580318466157&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fmogi-das-cruzes-suzano%2Feleicoes%2F2018%2Fnoticia%2F2018%2F09%2F17%2Fmarcio-franca-promete-incentivar-municipios-a-instalarem-cameras-para-monitoramento-em-todo-o-estado-de-sp.ghtml&syn=False&key=9de299d3fb5528c48f651db15f080e49</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França apostou na 'fadiga' tucana</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,franca-apostou-na-fadiga-tucana,70002568873</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleição em SP é a mais disputada em 20 anos</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,eleicao-em-sp-e-a-mais-disputada-em-20-anos,70002568815</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Veja as intenções de voto para os governos estaduais</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,veja-as-intencoes-de-voto-para-os-governos-estaduais,70002568496</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope mostra empate em SP</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/ibope-mostra-empate-em-sp/</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope: Na véspera da eleição, França sobe e empata numericamente com Doria</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,ibope-na-vespera-da-eleicao-franca-sobe-e-empata-com-doria,70002568204</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Divisão nacional contaminou eleição em São Paulo', diz Márcio França</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,divisao-nacional-contaminou-eleicao-em-sao-paulo-diz-marcio-franca,70002567968</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria acusa Márcio França de 'condescendência' com fake news</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,doria-acusa-marcio-franca-de-condescendencia-com-fake-news,70002567851</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria: 'França foi condescendente'</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/doria-franca-foi-condescendente/</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Doria não se preparou para ser candidato a governador', diz França</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,doria-nao-se-preparou-para-ser-candidato-a-governador-diz-franca,70002567584</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria só fala de Bolsonaro</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/doria-so-fala-de-bolsonaro/</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França e Doria empatam numericamente na última pesquisa Ibope a...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=30&r=1580318539788&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Ffranca-doria-empatam-numericamente-na-ultima-pesquisa-ibope-antes-da-votacao-23191437&t=informacional&d=false&f=false&ss=&o=&cat=&key=07d7b7d0f25addcc2651d6bd15ed2d0a</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, França tem 51%, contra 49% de Doria, segundo Datafolha</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=32&r=1580318539791&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sp-franca-tem-51-contra-49-de-doria-segundo-datafolha-23191439&t=informacional&d=false&f=false&ss=&o=&cat=&key=c79f8d3c37f79f618aab6cbeb2c204d6</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França diz que eleitores não querem marketing; Doria afirma que...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=33&r=1580318539792&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Ffranca-diz-que-eleitores-nao-querem-marketing-doria-afirma-que-abrira-mao-do-salario-23153828&t=informacional&d=false&f=false&ss=&o=&cat=&key=48284c1763810d3fe83cbe1b0641fe20</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em São Paulo, Doria e França adotam trégua em debate na TV</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=34&r=1580318539794&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sao-paulo-doria-franca-adotam-tregua-em-debate-na-tv-23179831&t=informacional&d=false&f=false&ss=&o=&cat=&key=b150fdfee42e6b7005df6fb4698f6b82</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, Doria lidera com 53% e França tem 47%, aponta Datafolha</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=35&r=1580318539795&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sp-doria-lidera-com-53-franca-tem-47-aponta-datafolha-23166879&t=informacional&d=false&f=false&ss=&o=&cat=&key=c276444fae4fc90280628246f33d0c2c</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ao votar em SP, França provoca Doria: 'De virada é mais gostoso...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=36&r=1580318539796&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fao-votar-em-sp-franca-provoca-doria-de-virada-mais-gostoso-23192597&t=informacional&d=false&f=false&ss=&o=&cat=&key=36e4669b310eccafff662e60f3c322e1</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, Datafolha aponta disputa entre Doria e Skaf e cresciment...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=37&r=1580318539798&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sp-datafolha-aponta-disputa-entre-doria-skaf-crescimento-de-franca-23128231&t=informacional&d=false&f=false&ss=&o=&cat=&key=4eca667d0ac22108599f006a4e9a27cb</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Skaf oficializa apoio a França, e juntos criticam Doria: 'Aqui ...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=38&r=1580318539799&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fskaf-oficializa-apoio-franca-juntos-criticam-doria-aqui-tem-palavra-23146055&t=informacional&d=false&f=false&ss=&o=&cat=&key=eedc373f1faf7f76720953c9556ca9c1</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, Doria aposta em eleitor de Bolsonaro, e França ataca car...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=39&r=1580318539800&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sp-doria-aposta-em-eleitor-de-bolsonaro-franca-ataca-carater-do-adversario-23148053&t=informacional&d=false&f=false&ss=&o=&cat=&key=d6d8eae79140d12e566a4328b4950236</Data></Cell>
+			<Cell><Data ss:Type="Number">4</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - São Vicente</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=62&r=1580318466164&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fsao-vicente%2F1-turno&syn=False&key=6ea63e056c298371cc1b5525353caf38</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França promete 80 mil bolsas de R$ 500 para jovens carentes de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=63&r=1580318466170&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F09%2F15%2Fmarcio-franca-promete-80-mil-bolsas-de-r-500-para-jovens-carentes-de-sp.ghtml&syn=False&key=93ebf36d099eeb6f208ef1c9c971386b</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França diz que planeja elevar acesso de crianças ao cinema e teatro no estado de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=64&r=1580318466177&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fpiracicaba-regiao%2Fnoticia%2F2018%2F09%2F08%2Fmarcio-franca-diz-que-planeja-elevar-acesso-de-criancas-ao-cinema-e-teatro-no-estado-de-sp.ghtml&syn=False&key=37dd117f8b1e43d2c923b4445506c6d3</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Aproveitando polêmica com Doria, Márcio França promete ampliar cirurgias bariátricas pelo SUS</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=65&r=1580318466184&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F09%2F25%2Faproveitando-polemica-com-doria-marcio-franca-promete-ampliar-cirurgias-bariatricas-pelo-sus.ghtml&syn=False&key=145113eb43cc7db45152b57a620c6797</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">PSB oficializa candidatura de Márcio França ao governo de São Paulo</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=66&r=1580318466190&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F08%2F04%2Fpsb-oficializa-candidatura-de-marcio-franca-ao-governo-de-sao-paulo.ghtml&syn=False&key=cad45254a847a3843f704dffd581cfd1</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - São Carlos</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=67&r=1580318466196&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-carlos-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fsao-carlos%2F1-turno&syn=False&key=529dd11a6a13ffb03df96d96ce3d3a86</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - São Carlos</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=68&r=1580318466202&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-carlos-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fsao-carlos%2F1-turno&syn=False&key=bf6eca3eb3f2afd3fe4ab5774cb74c06</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - São Vicente</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=69&r=1580318466208&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fsao-vicente%2F1-turno&syn=False&key=ae9a5bad82c8edfcb25fbbcc8edaf7ad</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Mauá</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=70&r=1580318466214&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fmaua%2F1-turno&syn=False&key=f976ef1dff7df2ac60b91085632e7750</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Marília</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=71&r=1580318466221&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fbauru-marilia%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fmarilia%2F1-turno&syn=False&key=f1c2595b9912eb95126d08d07a43b4b8</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Barueri</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=72&r=1580318466227&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fbarueri%2F1-turno&syn=False&key=ca8d90a35863509fc80a3d9216cde45e</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Barueri</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=73&r=1580318466234&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fbarueri%2F1-turno&syn=False&key=5b51a60f2c14f297ff78e19301c941ff</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Osasco</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=74&r=1580318466240&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fosasco%2F1-turno&syn=False&key=86791422eb83301c0858d61d098ef862</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Taboão da Serra</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=75&r=1580318466246&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Ftaboao-da-serra%2F1-turno&syn=False&key=53bdbacadbd178fbfad782e445e1c754</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Marília</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=76&r=1580318468145&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fbauru-marilia%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fmarilia%2F1-turno&syn=False&key=f1c2595b9912eb95126d08d07a43b4b8</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Osasco</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=77&r=1580318468152&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fosasco%2F1-turno&syn=False&key=86791422eb83301c0858d61d098ef862</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Taboão da Serra</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=78&r=1580318468159&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Ftaboao-da-serra%2F1-turno&syn=False&key=53bdbacadbd178fbfad782e445e1c754</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Barueri</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=79&r=1580318468166&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fbarueri%2F1-turno&syn=False&key=5b51a60f2c14f297ff78e19301c941ff</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Praia Grande</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=80&r=1580318468175&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fpraia-grande%2F1-turno&syn=False&key=e8b1f837a47b7dc544cb243c62350865</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Limeira</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=81&r=1580318468181&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fpiracicaba-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Flimeira%2F1-turno&syn=False&key=f8eb37d1f6161062fc2d68f6687399e7</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - São Vicente</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=82&r=1580318468189&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fsao-vicente%2F1-turno&syn=False&key=ae9a5bad82c8edfcb25fbbcc8edaf7ad</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Márcio França admite problema no ensino médio e promete separar orçamentos das polícias em SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=83&r=1580318468192&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F09%2F10%2Fmarcio-franca-promete-zerar-em-3-meses-as-filas-nos-ames-e-separar-orcamentos-das-policias.ghtml&syn=False&key=c396dd16300edee6bf1608068bddad66</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Santo André</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=84&r=1580318468199&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fsanto-andre%2F1-turno&syn=False&key=df5688742e1027a6907017f5fab0eb45</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Guarujá</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=85&r=1580318468206&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsantos-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fguaruja%2F1-turno&syn=False&key=875e366546046f98c9a1b66501af24cc</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Suzano</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=86&r=1580318468213&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fmogi-das-cruzes-suzano%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fsuzano%2F1-turno&syn=False&key=4b2fe138b74b149f82a5c11de6d73009</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Campinas</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=87&r=1580318468220&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fcampinas-regiao%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-presidente%2Fcampinas%2F1-turno&syn=False&key=b2ba562039f105070cb6b50f58673936</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Eleições 2018 no G1 - Apuração por zona eleitoral - SP - Mauá</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=88&r=1580318468227&u=https%3A%2F%2Fespeciais.g1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fapuracao-zona-eleitoral-governador%2Fmaua%2F1-turno&syn=False&key=3a44db85333ae0485bb8c30a6b57ca85</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria vence em 35 das 58 zonas eleitorais da cidade de SP; França ganha em parte da Zona Leste, e Marinho, nos extremos</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=89&r=1580318468233&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F10%2F08%2Fdoria-vence-em-35-das-58-zonas-eleitorais-da-cidade-de-sp-franca-ganha-em-parte-da-zona-leste-e-marinho-nos-extremos.ghtml&syn=False&key=e7c71958eb128cd662193dec7f2694f6</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">TRE multa Márcio França em R$ 16 mil por publicidade no site do governo de SP</Data></Cell>
+			<Cell><Data ss:Type="String">http://g1.globo.com/busca/click?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=90&r=1580318468237&u=https%3A%2F%2Fg1.globo.com%2Fsp%2Fsao-paulo%2Feleicoes%2F2018%2Fnoticia%2F2018%2F09%2F04%2Ftre-multa-marcio-franca-em-r-16-mil-por-publicidade-no-site-do-governo-de-sp.ghtml&syn=False&key=1d108d0533033524b331e4d18e9f89e1</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Bolsonaro é quem dará o tom de um país pacificado', diz Doria </Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,bolsonaro-e-quem-dara-o-tom-de-um-pais-pacificado-diz-doria,70002567504</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França avança sobre o PP e Doria ‘cola’ no PSL</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,franca-avanca-sobre-o-pp-e-doria-cola-no-psl,70002566890</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Do Marcelo: Clima de já ganhou atrapalha Bolsonaro</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/do-marcelo-clima-de-ja-ganhou-atrapalha-bolsonaro/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Hegemonia em xeque?</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/hegemonia-em-xeque/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">STF tenta intimar filho de Bolsonaro há 23 dias</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/blogs/coluna-do-estadao/stf-tenta-intimar-filho-de-bolsonaro-ha-23-dias/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">‘PSDB sente ciúmes de Doria’, diz candidato a vice do tucano</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,psdb-sente-ciumes-de-doria-diz-candidato-a-vice-do-tucano,70002564564</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bancada do PSL dá força a ‘Centrão’ na Alesp</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,bancada-do-psl-da-forca-a-centrao-na-alesp,70002564807</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Confira os 'melhores momentos’ do debate na Globo para governador de SP</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,confira-os-melhores-momentos-do-debate-na-globo-para-governador-de-sp,70002564776</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria e França disputam legado de Alckmin em debate na Globo</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,doria-e-franca-disputam-legado-de-alckmin-em-debate-na-globo,70002564729</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Cadê as privatizações, Doria?'</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/cade-as-privatizacoes-doria/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">França: 'Alckmin queria renovação em SP'</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/franca-alckmin-queria-renovacao-em-sp/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Bolsonaro pede empenho e Haddad faz corpo a corpo na reta final de campanha</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,bolsonaro-pede-empenho-e-haddad-faz-corpo-a-corpo-na-reta-final-de-campanha,70002564565</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria evita falar de sua rejeição na capital</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/doria-evita-falar-de-sua-rejeicao-na-capital/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Pancadaria entre tucanos e socialistas</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/pancadaria-entre-tucanos-e-socialistas/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">João Doria tem 52% e Márcio França, 48%, diz pesquisa</Data></Cell>
+			<Cell><Data ss:Type="String">https://politica.estadao.com.br/noticias/eleicoes,joao-doria-tem-52-e-marcio-franca-48-diz-pesquisa,70002564198</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Datafolha: Empate técnico entre Doria e França</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/datafolha-empate-tecnico-entre-doria-e-franca/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Doria abre 9,6 pontos sobre França, diz pesquisa</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/doria-abre-96-pontos-sobre-franca-diz-pesquisa/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Material 'bolsodoria' apreendido</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/49095-2/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">'Bolsodoria': âncora para Bolsonaro?</Data></Cell>
+			<Cell><Data ss:Type="String">https://brpolitico.com.br/noticias/bolsodoria-ancora-para-bolsonaro/</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, Doria aposta em eleitor de Bolsonaro, e França ataca car...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=40&r=1580318542776&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sp-doria-aposta-em-eleitor-de-bolsonaro-franca-ataca-carater-do-adversario-23148053&t=informacional&d=false&f=false&ss=&o=&cat=&key=d6d8eae79140d12e566a4328b4950236</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em São Paulo, campanha de Doria faz denúncia contra França mas ...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=42&r=1580318542779&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sao-paulo-campanha-de-doria-faz-denuncia-contra-franca-mas-poupa-secretario-tucano-22998279&t=informacional&d=false&f=false&ss=&o=&cat=&key=593c942c0f6120218b9af06ec6dbc094</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">SP: Com 95% das urnas apuradas, Doria lidera com 51%</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=43&r=1580318542781&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fsp-com-95-das-urnas-apuradas-doria-lidera-com-51-23193419&t=informacional&d=false&f=false&ss=&o=&cat=&key=26830443fc83b9e183f970f44223025c</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">SP: Doria lidera com 33%, Skaf tem 26% e França, 20%, diz Dataf...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=44&r=1580318542782&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fsp-doria-lidera-com-33-skaf-tem-26-franca-20-diz-datafolha-23134615&t=informacional&d=false&f=false&ss=&o=&cat=&key=9b87c15ba84b62e6e70813e00e2ff306</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Ibope: Doria e Skaf continuam empatados tecnicamente</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=45&r=1580318542784&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fibope-doria-skaf-continuam-empatados-tecnicamente-23134644&t=informacional&d=false&f=false&ss=&o=&cat=&key=9db438675f97add7c825773cc0a3a5ff</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em entrevista ao Roda Viva, Doria e França buscam voto de Bolso...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=46&r=1580318542785&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-entrevista-ao-roda-viva-doria-franca-buscam-voto-de-bolsonaro-se-esquivam-de-denuncias-contra-aliados-tucanos-23158928&t=informacional&d=false&f=false&ss=&o=&cat=&key=f43b7ba3bf24b518be076c33fc4f8bff</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Em SP, Doria vota com camiseta 'BolsoDoria' e sem apoio de Alck...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=48&r=1580318542788&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fem-sp-doria-vota-com-camiseta-bolsodoria-sem-apoio-de-alckmin-23192362&t=informacional&d=false&f=false&ss=&o=&cat=&key=95ac293ce6fc9daa506c582d41dcbdef</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">Skaf e Doria evitam ataques mútuos para conter avanço de França...</Data></Cell>
+			<Cell><Data ss:Type="String">https://oglobo.globo.com/busca/click?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&p=49&r=1580318542789&u=https%3A%2F%2Foglobo.globo.com%2Fbrasil%2Fskaf-doria-evitam-ataques-mutuos-para-conter-avanco-de-franca-em-sp-23122481&t=informacional&d=false&f=false&ss=&o=&cat=&key=57feb8c84facca5bde0f6c67ad643dc9</Data></Cell>
+			<Cell><Data ss:Type="Number">5</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

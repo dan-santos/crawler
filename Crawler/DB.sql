@@ -40,6 +40,8 @@ insert into candidatos (Nome_Candidato) values ("Márcio França");
 
 delete from tweets;
 
+select Conteudo_Tweet from tweets;
+
 select * from candidatos;
 select count(*) from tematicas;
 select count(*) from tweets;
@@ -47,6 +49,13 @@ select * from noticias limit 250;
 drop table tematicas;
 drop table tweets;
 
-select tematicas.Quantidade_Tematica, tematicas.Nome_Tematica, candidatos.Nome_Candidato 
+select tematicas.Quantidade_Tematica as 'Quantidade de Aparições', tematicas.Nome_Tematica as 'Palavra / Temática', candidatos.Nome_Candidato as 'Candidato que mencionou'
 from tematicas, candidatos where tematicas.ID_Candidato = candidatos.ID_Candidato
-order by Quantidade_Tematica desc limit 100;
+order by Quantidade_Tematica desc;
+
+select candidatos.Nome_Candidato as 'Candidato', tweets.Conteudo_Tweet as 'Tweet'
+from candidatos, tweets where candidatos.ID_Candidato = tweets.ID_Candidato
+order by Nome_Candidato asc;
+
+select noticias.Titulo_Noticia as 'Título da notícia', noticias.Link_Noticia as 'Link', noticias.Relevancia_Noticia as 'Relevância'
+from noticias order by Relevancia_Noticia asc;
