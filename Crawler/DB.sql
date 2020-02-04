@@ -53,9 +53,11 @@ select tematicas.Quantidade_Tematica as 'Quantidade de Aparições', tematicas.N
 from tematicas, candidatos where tematicas.ID_Candidato = candidatos.ID_Candidato
 order by Quantidade_Tematica desc;
 
-select candidatos.Nome_Candidato as 'Candidato', tweets.Conteudo_Tweet as 'Tweet'
-from candidatos, tweets where candidatos.ID_Candidato = tweets.ID_Candidato
-order by Nome_Candidato asc;
+select tweets.Conteudo_Tweet as 'Tweet'
+from tweets
+order by tweets.ID_Candidato asc;
 
-select noticias.Titulo_Noticia as 'Título da notícia', noticias.Link_Noticia as 'Link', noticias.Relevancia_Noticia as 'Relevância'
-from noticias order by Relevancia_Noticia asc;
+select count(*) from tweets where ID_Candidato = 2;
+
+select noticias.ID_Noticia as 'ID', noticias.Titulo_Noticia as 'Título da notícia', noticias.Link_Noticia as 'Link', noticias.Relevancia_Noticia as 'Relevância'
+from noticias order by ID_Noticia asc;
