@@ -28,6 +28,66 @@ indexarTweet(tweets)
 indexarTematicas(tweetsJoaoDoria, 1)
 indexarTematicas(tweetsMarcioFranca, 2)
     
+recuperarTweets()
+
+def recuperarTweets():
+    mediaEngajamentoJD = 0.0
+    mediaEngajamentoMF = 0.0
+    conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
+    cursorUrl = conexao.cursor()
+    cursorUrl.execute('select (Conteudo_Tweet) from tweets')
+    resultados = cursorUrl.fetchall()
+    tweets = list(resultados)
+        
+    for i, tweet in enumerate(tweets):
+        respostas = tweet[0][tweet[0].index('Respostas: ')+11:tweet[0].index(' Retweets: ')]
+        resp = formatar(respostas)
+        retweets = tweet[0][tweet[0].index('Retweets: ')+10:tweet[0].index(' Curtidas: ')]
+        retw = formatar(retweets)
+        curtidas = tweet[0][tweet[0].index('Curtidas: ')+10:]
+        curt = formatar(curtidas)
+        
+        if i <= 636:
+            mediaAntiga = mediaEngajamentoJD
+            mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)/2
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+            conteudo = arquivo.readlines()
+            conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoJD}\n')
+            
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+            arquivo.writelines(conteudo)
+            arquivo.close()
+        else:
+            mediaAntiga = mediaEngajamentoMF
+            mediaEngajamentoMF = ((resp+retw+curt) + mediaEngajamentoMF)/2
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+            conteudo = arquivo.readlines()
+            conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoMF}\n')
+            
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
+            arquivo.writelines(conteudo)
+            arquivo.close()
+            
+    cursorUrl.close()
+    conexao.close()
+    
+    
+def formatar(texto):
+    texto = texto.strip()
+    if texto == '':
+        texto = '0'
+    if 'mil' in texto:
+        texto = texto.replace('mil','')
+        texto = texto.replace(',','.')
+        texto = texto.strip()
+        texto = float(texto)
+        txt = float(texto*1000)
+        return txt
+    else:    
+        txt = float(texto)
+        return txt
+    
+    
 
 def pegarLinks():
     """
