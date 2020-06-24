@@ -8,6 +8,10 @@ import nltk
 import re
 import pymysql
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
 links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
 titulos = list() #onde ficarão armazenados os títulos das notícias
 relevancia = list() #onde ficará armazenada a relevancia da noticia
@@ -29,18 +33,36 @@ indexarTematicas(tweetsMarcioFranca, 2)
 recuperarTweets()
 
 def recuperarTweets():
+    """
+    Abre conexão com o MySQL e retorna o contéudo de todos os tweets dos dois candidatos
+    Também calcula a média de interações por tweet que cada candidato obteve (resultados disponíveis nos arquivos de texto
+    presentes neste mesmo respositório com o nome "Média de interações por tweet - Candidato")
+
+    :return: void/nulo
+    """
+    #
     mediaEngajamentoJD = 0.0
     mediaEngajamentoMF = 0.0
+
     conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
     cursorUrl = conexao.cursor()
     cursorUrl.execute('select (Conteudo_Tweet) from tweets')
+<<<<<<< HEAD
     resultados = cursorUrl.fetchall()
     tweets = list(resultados)
     
     mediaEngajamentoMF = 0
     mediaEngajamentoJD = 0
     
+=======
+    resultados = cursorUrl.fetchall() #captura todos os resultados retornados no select
+    tweets = list(resultados) #transforma os resultados em composnentes e uma lista
+        
+>>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
     for i, tweet in enumerate(tweets):
+        #As seguintes linhas (até o primeiro if) são responsáveis por capturar os números de respostas, retweets e curtidas
+        #de cada tweet e tranformá-los em valores inteiros através do método formatar()
+
         respostas = tweet[0][tweet[0].index('Respostas: ')+11:tweet[0].index(' Retweets: ')]
         resp = formatar(respostas)
         retweets = tweet[0][tweet[0].index('Retweets: ')+10:tweet[0].index(' Curtidas: ')]
@@ -48,6 +70,7 @@ def recuperarTweets():
         curtidas = tweet[0][tweet[0].index('Curtidas: ')+10:]
         curt = formatar(curtidas)
         
+<<<<<<< HEAD
         if i <= 636:
             mediaAntigaJD = mediaEngajamentoJD
             mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)
@@ -64,6 +87,24 @@ def recuperarTweets():
             arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
             conteudoMF = arquivoMF.readlines()
             conteudoMF.append(f'({resp+retw+curt} + {mediaAntigaMF}) = {mediaEngajamentoMF}\n')
+=======
+        if i <= 636: # 0 <= i <= 636 -> Tweets do candidato João Dória
+            mediaAntiga = mediaEngajamentoJD
+            mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)/2
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+            conteudo = arquivo.readlines()
+            conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoJD}\n')
+            
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+            arquivo.writelines(conteudo)
+            arquivo.close()
+        else: # i > 636 -> Tweets dos candidato Márcio França
+            mediaAntiga = mediaEngajamentoMF
+            mediaEngajamentoMF = ((resp+retw+curt) + mediaEngajamentoMF)/2
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+            conteudo = arquivo.readlines()
+            conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoMF}\n')
+>>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
             
             arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
             arquivoMF.writelines(conteudoMF)
@@ -89,6 +130,11 @@ def recuperarTweets():
     
     
 def formatar(texto):
+    """
+    Função responável por tranformar os valores contidos nas variáveis de retweet, curtidas e respostas em números inteiros
+    :param texto: número em formato de string
+    :return: número em formato de float (real)
+    """
     texto = texto.strip()
     if texto == '':
         texto = '0'
@@ -117,6 +163,7 @@ def pegarLinks():
     O intervalo de datas estabelecido é de 01/08/2018 até 01/11/2018
     As palavras chave mudam de acordo com o site por um princípio de expansão da obtenção de dados, no qual pode ser verificado
     na planilha "Crawler - Levantamento de dados" localizada no mesmo diretório que este código
+
     :return: void/nulo
     """
     sites = ['http://g1.globo.com/busca/?q=Fake+News+Intelig%C3%AAncia+Artificial+elei%C3%A7%C3%B5es+SP+2018+Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&page=1&order=recent&from=2018-08-01T00%3A00%3A00-0300&to=2018-11-01T23%3A59%3A59-0300&species=not%C3%ADcias',
@@ -124,7 +171,7 @@ def pegarLinks():
          'https://search.folha.uol.com.br/search?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a+Fake+News+Elei%C3%A7%C3%B5es+SP+2018&periodo=personalizado&sd=01%2F08%2F2018&ed=01%2F11%2F2018&site=todos',
          'https://oglobo.globo.com/busca/?q=Jo%C3%A3o+D%C3%B3ria+M%C3%A1rcio+Fran%C3%A7a&species=not%C3%ADcias&page=1']
 
-    #tags css dos botões de "próximo, ver mais, próxima página ou semelhante
+    #tags css dos botões de "próximo, ver mais, próxima página" ou semelhante
     botoes = ['.results__content:last-child > div > a', '.mais-itens:last-child > div > a', '.c-pagination__arrow:last-child > a', '.proximo']
 
     #tags css dos links das notícias
@@ -155,11 +202,12 @@ def pegarLinks():
                 elif i == 3: 
                     """
                     O site "O Globo" só mostra 10 resultados por vez, e, além disso, não possui filtro de busca com datas
-                    Graças a isso, deveremos verificar se a notícia está no intervalo pretendido (01/08/2018 até 01/11/2018)
+                    Devido a isso, deveremos verificar se a notícia está no intervalo pretendido (01/08/2018 até 01/11/2018)
                     Ademais, mesmo após os resultados tendo esgotado-se, o botão de "próximo" continua sendo válido para clique,
                     fazendo o algoritmo capturar mais de uma vez os links da última página, por isso, antes de armazenar o link, 
                     devemos verificar se ele já não foi inserido (O conflito acontece na último página de resultados)
                     """
+                    #definindo limite de datas
                     dataInicio = datetime.date(2018, 8, 1)
                     dataFim = datetime.date(2018, 11, 1)
                     dataNoticia = list()
@@ -169,13 +217,13 @@ def pegarLinks():
                         data = datas.text.strip() #tirando possíveis espaços em branco
                         data = data[:10] #tirando hora e deixando só a data
                         data = datetime.date(int(data[6:]), int(data[3:5]), int(data[:2]))#Pegando texto e tranformando em data
-                        if dataInicio <= data <= dataFim: #Definindo se a data é válida
+                        if dataInicio <= data <= dataFim: #Definindo se a data de publicação da notícia é válida
                             dataNoticia.append(True)
                         else:
                             dataNoticia.append(False)
                     
                     j = 0 #contador
-                    for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]):
+                    for pags in driver.find_elements(By.CSS_SELECTOR, tagLinks[i]): #evitando inserção das mesmas notícias
                         if pags.get_attribute('href') not in links and dataNoticia[j] == True: #se o link ainda não existe dentro da lista e a respectiva data é válida
                             links.append(pags.get_attribute('href'))
                             titulos.append(pags.text)
@@ -183,7 +231,7 @@ def pegarLinks():
                         j += 1
                     
                 #independente de qual site estamos trabalhando, a linha abaixo realiza o clique para a próxima página de resultados
-                driver.execute_script('arguments[0].click();', WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, botoes[i]))))#Localizando botão de "ver mais"
+                driver.execute_script('arguments[0].click();', WebDriverWait(driver,20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, botoes[i])))) #Localizando botão de "ver mais"
                 time.sleep(2) #Tempo se 2 seg de espera para evitar erros de carregamento da página
                 click += 1 #incremento
                 
@@ -191,7 +239,7 @@ def pegarLinks():
                 break #Sai do while
         
         if i < 2: #Os veículos "Folha de SP" e "O globo" não precisam passar por aqui pois a captura dos dados já foi realizada no for anterior
-            #Os sites G1 e Estadão mostram todos os resultados, por isso deixamos para fazer a coleta de links abaixo
+            #Os sites "G1" e "Estadão" mostram todos os resultados, por isso deixamos para fazer a coleta de links abaixo
             for j, pags in enumerate(driver.find_elements(By.CSS_SELECTOR, tagLinks[i])): #Percorrerá todos os links para as notícias
                 links.append(pags.get_attribute('href'))
                 #Como não há como paginar, definimos a relevância da notícia de acordo com a sua posição dentro da página
@@ -245,20 +293,27 @@ def indexarNoticias(noticias):
 
 def pegarTweets():
     """
-    Essa função pega todo o conteúdo textual feito pelos dois candidatos no intervalo de tempo já citado.
+    Essa função pega por completo o conteúdo textual feito pelos dois candidatos no intervalo de tempo já citado.
     Ela é capaz de identificar se o tweet é realmente um tweet direcionado a todos os seguidores, se
     é direcionado a outro User do Twitter como resposta ou é um retweet.
+
     Esse trecho do código está sujeito a não funcionar da maneira correta, pois por um bug do próprio Twitter,
     a rede social pode abrir a página com dois layouts diferentes, e a função só está preparada para receber um deles.
+
     Além disso, o layout no qual a função não se adapta também possui falhas na captura de tags, isto é, elementos
     iguais da página, por vezes, possuem tags css diferentes, o que impossibilita a captura de todos os tweets da
-    forma correta. Após uma pesquisa, averiguou-se que no ano de 2019 o Twitter passou por uma
+    forma correta.
+
+    Após uma pesquisa, averiguou-se que no ano de 2019 o Twitter passou por uma
     mudança de layout, o que não justifica, mas elucida a possível origem do bug de dos layouts diferentes para o mesmo link.
+
     Como não é possível fazer de forma viável e suficientemente legível a captura de todos os dados pretendidos do tweet
     - data, categoria, conteúdo e engajamento - a função terá que percorrer todos os tweets um total de 3 vezes (data e
     categoria são obtidos no mesmo laço).
     :return: void/null
     """
+
+    #links dos tweets já com os filtros de busca aplicados
     perfisTwitter = ['https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Ajdoriajr&src=unkn',
          'https://twitter.com/search?f=tweets&vertical=default&q=since%3A2018-08-01%20until%3A2018-11-01%20from%3Amarciofrancagov&src=unkn']
 
@@ -272,7 +327,7 @@ def pegarTweets():
     opts.add_argument('disable-infobars')
     driver = webdriver.Chrome(options=opts, executable_path='chromedriver.exe')
 
-    # as seguintes variáveis serão utilizadas como referencial da posição de cada tweet para a iteração dos laços necessários
+    # As seguintes variáveis serão utilizadas como referencial da posição de cada tweet para a iteração dos laços necessários
     posicaoTweet = 0
     posicaoEngajamento = 0
 
@@ -280,10 +335,11 @@ def pegarTweets():
     for i in range(len(perfisTwitter)):
         driver.get(perfisTwitter[i]) # Pega o link de pesquisa avançada
 
-        # O proxímo laço é responsável por verificar se o crawler chegou ao fim da página
-        # Como os tweets vão sendo carregados conforme o scroll down da pagina, o cálculo se dá pela seguinte lógica:
-        # Se altura antes do crawler chegar no fim da página = altura da pag depois do crawler chegar ao "fundo", então,
-        # realmente o final da página chegou e podemos começar a capturar o conteúdo dos tweets
+        """ O proxímo laço é responsável por verificar se o crawler chegou ao fim da página
+         Como os tweets vão sendo carregados conforme o scroll-down da pagina, o cálculo se dá pela seguinte lógica:
+         Se a altura antes do crawler chegar no fim da página = altura da pag depois do crawler chegar ao fim da página, então,
+         realmente o final da página chegou e podemos começar a capturar o conteúdo dos tweets """
+
         last_height = driver.execute_script('return document.body.scrollHeight')
         time.sleep(2) # Espera de dois segundos para certificar que todos os compontentes da página foram corretamente carregados
         while True:
@@ -347,7 +403,8 @@ def pegarTweets():
 def indexarTematicas(listaTweets, candidato):
     """
     Função responsável por chamar o indexador de palavras para cada tweet da lista anteriormente capturada
-    :param listaTweets: list composta por apenas o conteúdo de todos os tweets dos candidatos
+
+    :param listaTweets: list composta por apenas o conteúdo de todos os tweets dos candidatos (sem cabeçalho e interações)
     :param candidato: int que indica qual o ID do candidato
     1 - João Dória
     2 - Márcio França
@@ -397,6 +454,7 @@ def palavraIndexada(palavras, candidato):
     """
     Verifica se as palavras inseridas na lista já estão no banco de dados, se sim, faz um update no banco incrementando em
     +1 a quantidade que aquela determinada palavra aparece. Se não, faz um insert na nova palavra
+    
     :param palavras: list - palavras dos tweets, já desconsiderando stopwords
     :param candidato: ID do candidato autor dos tweets que o algoritmo está analisando
     1 - João Dória
