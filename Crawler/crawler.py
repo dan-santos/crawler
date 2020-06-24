@@ -8,8 +8,6 @@ import nltk
 import re
 import pymysql
 
-#TODO: Adicionar script de análise de emoções nos tweets
-
 links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
 titulos = list() #onde ficarão armazenados os títulos das notícias
 relevancia = list() #onde ficará armazenada a relevancia da noticia
@@ -38,7 +36,10 @@ def recuperarTweets():
     cursorUrl.execute('select (Conteudo_Tweet) from tweets')
     resultados = cursorUrl.fetchall()
     tweets = list(resultados)
-        
+    
+    mediaEngajamentoMF = 0
+    mediaEngajamentoJD = 0
+    
     for i, tweet in enumerate(tweets):
         respostas = tweet[0][tweet[0].index('Respostas: ')+11:tweet[0].index(' Retweets: ')]
         resp = formatar(respostas)
@@ -48,25 +49,40 @@ def recuperarTweets():
         curt = formatar(curtidas)
         
         if i <= 636:
-            mediaAntiga = mediaEngajamentoJD
-            mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)/2
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
-            conteudo = arquivo.readlines()
-            conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoJD}\n')
+            mediaAntigaJD = mediaEngajamentoJD
+            mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)
+            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+            conteudoJD = arquivoJD.readlines()
+            conteudoJD.append(f'({resp+retw+curt} + {mediaAntigaJD}) = {mediaEngajamentoJD}\n')
             
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
-            arquivo.writelines(conteudo)
-            arquivo.close()
+            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+            arquivoJD.writelines(conteudoJD)
+            arquivoJD.close()
         else:
-            mediaAntiga = mediaEngajamentoMF
-            mediaEngajamentoMF = ((resp+retw+curt) + mediaEngajamentoMF)/2
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
-            conteudo = arquivo.readlines()
-            conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoMF}\n')
+            mediaAntigaMF = mediaEngajamentoMF
+            mediaEngajamentoMF = ((resp+retw+curt) + mediaEngajamentoMF)
+            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+            conteudoMF = arquivoMF.readlines()
+            conteudoMF.append(f'({resp+retw+curt} + {mediaAntigaMF}) = {mediaEngajamentoMF}\n')
             
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
-            arquivo.writelines(conteudo)
-            arquivo.close()
+            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
+            arquivoMF.writelines(conteudoMF)
+            arquivoMF.close()
+            
+        
+    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+    conteudoJD = arquivoJD.readlines()
+    conteudoJD.append(f'({mediaEngajamentoJD}/636) = {mediaEngajamentoJD/636}\n')
+    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+    arquivoJD.writelines(conteudoJD)
+    arquivoJD.close()
+    
+    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+    conteudoMF = arquivoMF.readlines()
+    conteudoMF.append(f'({mediaEngajamentoMF}/1071) = {mediaEngajamentoMF/1071}\n')
+    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
+    arquivoMF.writelines(conteudoMF)
+    arquivoMF.close()
             
     cursorUrl.close()
     conexao.close()
