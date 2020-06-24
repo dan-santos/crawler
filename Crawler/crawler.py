@@ -8,7 +8,10 @@ import nltk
 import re
 import pymysql
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
 links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
 titulos = list() #onde ficarão armazenados os títulos das notícias
 relevancia = list() #onde ficará armazenada a relevancia da noticia
@@ -44,9 +47,18 @@ def recuperarTweets():
     conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
     cursorUrl = conexao.cursor()
     cursorUrl.execute('select (Conteudo_Tweet) from tweets')
+<<<<<<< HEAD
+    resultados = cursorUrl.fetchall()
+    tweets = list(resultados)
+    
+    mediaEngajamentoMF = 0
+    mediaEngajamentoJD = 0
+    
+=======
     resultados = cursorUrl.fetchall() #captura todos os resultados retornados no select
     tweets = list(resultados) #transforma os resultados em composnentes e uma lista
         
+>>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
     for i, tweet in enumerate(tweets):
         #As seguintes linhas (até o primeiro if) são responsáveis por capturar os números de respostas, retweets e curtidas
         #de cada tweet e tranformá-los em valores inteiros através do método formatar()
@@ -58,6 +70,24 @@ def recuperarTweets():
         curtidas = tweet[0][tweet[0].index('Curtidas: ')+10:]
         curt = formatar(curtidas)
         
+<<<<<<< HEAD
+        if i <= 636:
+            mediaAntigaJD = mediaEngajamentoJD
+            mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)
+            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+            conteudoJD = arquivoJD.readlines()
+            conteudoJD.append(f'({resp+retw+curt} + {mediaAntigaJD}) = {mediaEngajamentoJD}\n')
+            
+            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+            arquivoJD.writelines(conteudoJD)
+            arquivoJD.close()
+        else:
+            mediaAntigaMF = mediaEngajamentoMF
+            mediaEngajamentoMF = ((resp+retw+curt) + mediaEngajamentoMF)
+            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+            conteudoMF = arquivoMF.readlines()
+            conteudoMF.append(f'({resp+retw+curt} + {mediaAntigaMF}) = {mediaEngajamentoMF}\n')
+=======
         if i <= 636: # 0 <= i <= 636 -> Tweets do candidato João Dória
             mediaAntiga = mediaEngajamentoJD
             mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)/2
@@ -74,10 +104,26 @@ def recuperarTweets():
             arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
             conteudo = arquivo.readlines()
             conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoMF}\n')
+>>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
             
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
-            arquivo.writelines(conteudo)
-            arquivo.close()
+            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
+            arquivoMF.writelines(conteudoMF)
+            arquivoMF.close()
+            
+        
+    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+    conteudoJD = arquivoJD.readlines()
+    conteudoJD.append(f'({mediaEngajamentoJD}/636) = {mediaEngajamentoJD/636}\n')
+    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+    arquivoJD.writelines(conteudoJD)
+    arquivoJD.close()
+    
+    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+    conteudoMF = arquivoMF.readlines()
+    conteudoMF.append(f'({mediaEngajamentoMF}/1071) = {mediaEngajamentoMF/1071}\n')
+    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
+    arquivoMF.writelines(conteudoMF)
+    arquivoMF.close()
             
     cursorUrl.close()
     conexao.close()
