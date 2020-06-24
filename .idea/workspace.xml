@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="400947a7-046b-4855-8c35-0c699ac2e194" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Crawler/crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/crawler.py" afterDir="false" />
-    </list>
+    <list default="true" id="400947a7-046b-4855-8c35-0c699ac2e194" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +18,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3 Semestre/AED II/AEDII-Grafos" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,9 +34,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="703" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1586266797737">
+    <state x="466" y="142" width="424" height="482" key="FileChooserDialogImpl" timestamp="1586299835096">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="703" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586266797737" />
+    <state x="466" y="142" width="424" height="482" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1586299835096" />
+    <state x="703" y="211" key="com.intellij.ide.util.TipDialog" timestamp="1586299814386">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="703" y="211" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586299814386" />
   </component>
 </project>
