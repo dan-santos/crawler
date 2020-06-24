@@ -8,10 +8,6 @@ import nltk
 import re
 import pymysql
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
 links = list() #onde ficarão armzazenados todos os links da busca em sites de notícias
 titulos = list() #onde ficarão armazenados os títulos das notícias
 relevancia = list() #onde ficará armazenada a relevancia da noticia
@@ -44,21 +40,19 @@ def recuperarTweets():
     mediaEngajamentoJD = 0.0
     mediaEngajamentoMF = 0.0
 
-    conexao = pymysql.connect(host='localhost', user='root', passwd='fsociety', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
+    conexao = pymysql.connect(host='localhost', user='root', passwd='password', db='eleicoes', use_unicode = True, charset = 'utf8mb4', autocommit = True)
     cursorUrl = conexao.cursor()
     cursorUrl.execute('select (Conteudo_Tweet) from tweets')
-<<<<<<< HEAD
+
     resultados = cursorUrl.fetchall()
     tweets = list(resultados)
     
     mediaEngajamentoMF = 0
     mediaEngajamentoJD = 0
-    
-=======
+
     resultados = cursorUrl.fetchall() #captura todos os resultados retornados no select
     tweets = list(resultados) #transforma os resultados em composnentes e uma lista
-        
->>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
+
     for i, tweet in enumerate(tweets):
         #As seguintes linhas (até o primeiro if) são responsáveis por capturar os números de respostas, retweets e curtidas
         #de cada tweet e tranformá-los em valores inteiros através do método formatar()
@@ -69,59 +63,57 @@ def recuperarTweets():
         retw = formatar(retweets)
         curtidas = tweet[0][tweet[0].index('Curtidas: ')+10:]
         curt = formatar(curtidas)
-        
-<<<<<<< HEAD
+
         if i <= 636:
             mediaAntigaJD = mediaEngajamentoJD
             mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)
-            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - João Dória.txt', 'r', encoding='UTF-8')
             conteudoJD = arquivoJD.readlines()
             conteudoJD.append(f'({resp+retw+curt} + {mediaAntigaJD}) = {mediaEngajamentoJD}\n')
             
-            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+            arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - João Dória.txt', 'w', encoding='UTF-8')
             arquivoJD.writelines(conteudoJD)
             arquivoJD.close()
         else:
             mediaAntigaMF = mediaEngajamentoMF
             mediaEngajamentoMF = ((resp+retw+curt) + mediaEngajamentoMF)
-            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - Márcio França.txt', 'r', encoding='UTF-8')
             conteudoMF = arquivoMF.readlines()
             conteudoMF.append(f'({resp+retw+curt} + {mediaAntigaMF}) = {mediaEngajamentoMF}\n')
-=======
+
         if i <= 636: # 0 <= i <= 636 -> Tweets do candidato João Dória
             mediaAntiga = mediaEngajamentoJD
             mediaEngajamentoJD = ((resp+retw+curt) + mediaEngajamentoJD)/2
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - João Dória.txt', 'r', encoding='UTF-8')
             conteudo = arquivo.readlines()
             conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoJD}\n')
             
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - João Dória.txt', 'w', encoding='UTF-8')
             arquivo.writelines(conteudo)
             arquivo.close()
         else: # i > 636 -> Tweets dos candidato Márcio França
             mediaAntiga = mediaEngajamentoMF
             mediaEngajamentoMF = ((resp+retw+curt) + mediaEngajamentoMF)/2
-            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+            arquivo = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - Márcio França.txt', 'r', encoding='UTF-8')
             conteudo = arquivo.readlines()
             conteudo.append(f'({resp+retw+curt} + {mediaAntiga})/2 = {mediaEngajamentoMF}\n')
->>>>>>> 1b8378262e546af4af3ad2c3e35b35af1b766ba6
             
-            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
+            arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - Márcio França.txt', 'w', encoding='UTF-8')
             arquivoMF.writelines(conteudoMF)
             arquivoMF.close()
             
         
-    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'r', encoding='UTF-8')
+    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - João Dória.txt', 'r', encoding='UTF-8')
     conteudoJD = arquivoJD.readlines()
     conteudoJD.append(f'({mediaEngajamentoJD}/636) = {mediaEngajamentoJD/636}\n')
-    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento1.txt', 'w', encoding='UTF-8')
+    arquivoJD = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - João Dória.txt', 'w', encoding='UTF-8')
     arquivoJD.writelines(conteudoJD)
     arquivoJD.close()
     
-    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'r', encoding='UTF-8')
+    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - Márcio França.txt', 'r', encoding='UTF-8')
     conteudoMF = arquivoMF.readlines()
     conteudoMF.append(f'({mediaEngajamentoMF}/1071) = {mediaEngajamentoMF/1071}\n')
-    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Engajamento2.txt', 'w', encoding='UTF-8')
+    arquivoMF = open('C:/Users/danie/Documents/USP/IC/Crawler/Média de interações por tweet - Márcio França.txt', 'w', encoding='UTF-8')
     arquivoMF.writelines(conteudoMF)
     arquivoMF.close()
             
@@ -310,6 +302,12 @@ def pegarTweets():
     Como não é possível fazer de forma viável e suficientemente legível a captura de todos os dados pretendidos do tweet
     - data, categoria, conteúdo e engajamento - a função terá que percorrer todos os tweets um total de 3 vezes (data e
     categoria são obtidos no mesmo laço).
+
+    Vale lembrar que essa função foi construída com o único propósito de ilustrar que também é possível recuperar tweets
+    por um scraper de desenvolvimento próprio, embora não seja recomendável, já que o Tweepy (API da própria rede social)
+    existe para evitar isso. No código, não pude compartilhar o código do Tweepy pelo motivo da própria ferramenta não ser
+    open source/free software.
+
     :return: void/null
     """
 
